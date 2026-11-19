@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 9 English — Writing Practice Bank (Q5–Q8) | Prepared by Narayan Sir</title>
+<style>
+  :root{
+    --ink:#1b2430;
+    --muted:#5c6b7a;
+    --line:#e2e8f0;
+    --brand1:#0f4c81;
+    --brand2:#1d8a8a;
+    --paper:#f6f8fb;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    font-family:"Segoe UI", "Nirmala UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size:20px;
+    line-height:1.75;
+    color:var(--ink);
+    background:var(--paper);
+    background-image:
+      radial-gradient(circle at 12% 8%, #e8f1fb 0, transparent 45%),
+      radial-gradient(circle at 88% 4%, #e6f6f2 0, transparent 42%);
+    background-attachment:fixed;
+  }
+
+  /* ================= TOP BAR ================= */
+  .topbar{
+    position:sticky;
+    top:0;
+    z-index:900;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:10px 18px;
+    background:linear-gradient(100deg,#0f4c81 0%, #17699b 45%, #1d8a8a 100%);
+    color:#fff;
+    box-shadow:0 4px 18px rgba(15,76,129,.28);
+  }
+
+  .hamburger{
+    flex:0 0 auto;
+    width:56px;height:52px;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;
+    background:rgba(255,255,255,.14);
+    border:1.5px solid rgba(255,255,255,.45);
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+  }
+  .hamburger:hover{background:rgba(255,255,255,.28);transform:translateY(-1px);}
+  .hamburger span{
+    display:block;width:26px;height:3.4px;border-radius:3px;background:#fff;
+    transition:.3s;
+  }
+
+  .logo{
+    flex:0 0 auto;
+    display:flex;align-items:center;gap:11px;
+  }
+  .logo-badge{
+    width:52px;height:52px;border-radius:50%;
+    background:radial-gradient(circle at 32% 28%,#ffe8a3,#f6b93b 55%,#d98e04);
+    color:#3a2a00;
+    font-weight:800;font-size:20px;letter-spacing:.5px;
+    display:flex;align-items:center;justify-content:center;
+    border:2.5px solid #fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.28);
+    font-family:Georgia,serif;
+  }
+  .logo-text{line-height:1.15;}
+  .logo-text b{
+    display:block;font-size:19px;letter-spacing:.4px;
+    font-family:Georgia,"Times New Roman",serif;
+  }
+  .logo-text small{
+    display:block;font-size:13.5px;opacity:.9;letter-spacing:1.6px;text-transform:uppercase;
+  }
+
+  .topbar-title{
+    margin-left:auto;
+    text-align:right;
+    font-size:15px;
+    letter-spacing:.6px;
+    opacity:.95;
+    line-height:1.3;
+  }
+  .topbar-title strong{display:block;font-size:17px;}
+
+  /* ================= SIDEBAR ================= */
+  .overlay{
+    position:fixed;inset:0;background:rgba(12,25,40,.55);
+    backdrop-filter:blur(2px);
+    opacity:0;visibility:hidden;transition:.3s;z-index:998;
+  }
+  .overlay.show{opacity:1;visibility:visible;}
+
+  .sidebar{
+    position:fixed;top:0;left:0;bottom:0;width:340px;max-width:88vw;
+    background:#ffffff;
+    border-right:4px solid #1d8a8a;
+    box-shadow:10px 0 34px rgba(10,30,50,.25);
+    transform:translateX(-104%);
+    transition:transform .32s cubic-bezier(.4,0,.2,1);
+    z-index:999;
+    display:flex;flex-direction:column;
+  }
+  .sidebar.open{transform:translateX(0);}
+
+  .nav-head{
+    padding:16px 18px;
+    background:linear-gradient(100deg,#0f4c81,#1d8a8a);
+    color:#fff;
+    font-size:20px;font-weight:700;letter-spacing:.5px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-close{
+    background:rgba(255,255,255,.18);border:none;color:#fff;
+    width:38px;height:38px;border-radius:10px;font-size:22px;cursor:pointer;line-height:1;
+  }
+  .nav-close:hover{background:rgba(255,255,255,.35);}
+
+  .nav-scroll{overflow-y:auto;padding:12px 10px 40px;flex:1;}
+  .nav-scroll::-webkit-scrollbar{width:9px;}
+  .nav-scroll::-webkit-scrollbar-thumb{background:#b9c9d8;border-radius:9px;}
+
+  .nav-sec{
+    display:block;
+    margin:16px 6px 8px;
+    padding:9px 12px;
+    border-radius:10px;
+    background:linear-gradient(90deg,#eaf3fb,#e6f6f2);
+    color:#0f4c81;
+    font-weight:700;font-size:17.5px;
+    text-decoration:none;
+    border-left:5px solid #1d8a8a;
+  }
+  .nav-sec:hover{background:#dcecf7;}
+
+  .nav-link{
+    display:block;
+    padding:8px 14px;
+    margin:2px 4px;
+    border-radius:9px;
+    color:#2b3a4a;
+    text-decoration:none;
+    font-size:17px;
+    border-left:4px solid transparent;
+    transition:.18s;
+  }
+  .nav-link:hover{background:#f0f6fb;color:#0f4c81;border-left-color:#f6b93b;transform:translateX(3px);}
+  .nav-link.active{background:#e9f4ff;color:#0f4c81;font-weight:700;border-left-color:#0f4c81;}
+
+  /* ================= PAGE WRAP ================= */
+  .wrap{max-width:1080px;margin:0 auto;padding:34px 20px 120px;}
+
+  .hero{
+    background:#fff;
+    border-radius:22px;
+    padding:32px 30px;
+    box-shadow:0 10px 34px rgba(15,76,129,.10);
+    border-top:7px solid #f6b93b;
+    margin-bottom:34px;
+  }
+  .hero h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:38px;
+    line-height:1.25;
+    margin:0 0 8px;
+    color:#0f4c81;
+  }
+  .hero .sub{font-size:20px;color:var(--muted);margin:0 0 20px;}
+  .pill{
+    display:inline-block;
+    background:linear-gradient(90deg,#0f4c81,#1d8a8a);
+    color:#fff;font-size:15.5px;letter-spacing:.6px;
+    padding:6px 16px;border-radius:999px;margin:0 8px 8px 0;
+  }
+
+  .pattern-table{
+    width:100%;border-collapse:collapse;margin-top:18px;font-size:17px;
+    border-radius:12px;overflow:hidden;
+  }
+  .pattern-table th{
+    background:#0f4c81;color:#fff;padding:10px 12px;text-align:left;font-weight:600;
+  }
+  .pattern-table td{
+    padding:10px 12px;border-bottom:1px solid var(--line);background:#fbfdff;vertical-align:top;
+  }
+  .pattern-table tr:nth-child(even) td{background:#f2f8fd;}
+  .pattern-table tr:last-child td{border-bottom:none;}
+
+  /* ================= SECTION TITLE ================= */
+  .section-title{
+    margin:52px 0 22px;
+    padding:18px 24px;
+    border-radius:16px;
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:29px;
+    letter-spacing:.4px;
+    box-shadow:0 8px 22px rgba(15,76,129,.18);
+    scroll-margin-top:90px;
+  }
+  .section-title small{
+    display:block;font-family:"Segoe UI",sans-serif;
+    font-size:16.5px;font-weight:400;opacity:.92;margin-top:4px;letter-spacing:.5px;
+  }
+  .s5{background:linear-gradient(100deg,#0f4c81,#2f80b8);}
+  .s6{background:linear-gradient(100deg,#7b2d8e,#b4519c);}
+  .s7{background:linear-gradient(100deg,#b45309,#e08a1e);}
+  .s8{background:linear-gradient(100deg,#0d6b4f,#1d9a6c);}
+
+  /* ================= CARDS ================= */
+  .card{
+    background:#fff;
+    border-radius:18px;
+    margin:0 0 28px;
+    overflow:hidden;
+    box-shadow:0 8px 26px rgba(20,40,60,.10);
+    border-left:9px solid var(--a);
+    scroll-margin-top:92px;
+    transition:transform .22s, box-shadow .22s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,40,60,.16);}
+
+  .card-head{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:14px 22px;
+    background:var(--soft);
+    border-bottom:1px solid var(--line);
+  }
+  .qnum{
+    background:var(--a);color:#fff;
+    font-weight:800;font-size:17.5px;letter-spacing:.6px;
+    padding:5px 15px;border-radius:999px;
+    box-shadow:0 3px 9px rgba(0,0,0,.14);
+  }
+  .qtype{
+    font-size:17px;font-weight:700;color:var(--a);letter-spacing:.4px;text-transform:uppercase;
+  }
+
+  .qbox{padding:18px 22px 16px;background:var(--tint);}
+  .abox{padding:20px 22px 24px;background:#fff;}
+
+  .label{
+    display:inline-block;
+    font-size:14px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;
+    padding:3px 12px;border-radius:8px;margin-bottom:12px;
+  }
+  .qbox .label{background:var(--a);color:#fff;}
+  .abox .label{background:#eef3f8;color:var(--a);border:1.5px solid var(--a);}
+
+  .qbox p, .abox p{margin:0 0 12px;}
+  .qbox p:last-child, .abox p:last-child{margin-bottom:0;}
+
+  .clues{
+    background:#ffffffcc;
+    border-left:5px solid var(--a);
+    border-radius:10px;
+    padding:10px 14px;
+    font-size:18.5px;
+  }
+  .clues b{color:var(--a);}
+
+  .abox h4{
+    margin:16px 0 8px;
+    font-size:19.5px;
+    color:var(--a);
+    letter-spacing:.3px;
+  }
+  .abox h4:first-child{margin-top:0;}
+
+  .abox ol, .abox ul{margin:8px 0 14px;padding-left:26px;}
+  .abox li{margin-bottom:6px;}
+  .abox .center{text-align:center;font-weight:700;}
+  .abox .sign{text-align:right;font-weight:700;color:var(--a);}
+  .abox .strong{font-weight:700;}
+  .abox .divider{height:1px;background:var(--line);margin:16px 0;}
+
+  .data-note{
+    font-size:16.5px;color:var(--muted);font-style:italic;margin-top:10px;
+  }
+
+  /* ================= PALETTES (cycling) ================= */
+  .cards .card:nth-child(10n+1){--a:#d62828;--soft:#fdeaea;--tint:#fbe3e3;}
+  .cards .card:nth-child(10n+2){--a:#e07a00;--soft:#fef3e2;--tint:#fcecd7;}
+  .cards .card:nth-child(10n+3){--a:#0f8b8d;--soft:#e6f6f6;--tint:#ddf1f1;}
+  .cards .card:nth-child(10n+4){--a:#1d6fb8;--soft:#e8f2fb;--tint:#dcebfa;}
+  .cards .card:nth-child(10n+5){--a:#7b3fa0;--soft:#f3ebf9;--tint:#ece0f6;}
+  .cards .card:nth-child(10n+6){--a:#c2185b;--soft:#fdeaf1;--tint:#fbdcea;}
+  .cards .card:nth-child(10n+7){--a:#2e7d32;--soft:#eaf6ea;--tint:#dff0df;}
+  .cards .card:nth-child(10n+8){--a:#b45309;--soft:#fdf0e3;--tint:#fae6d3;}
+  .cards .card:nth-child(10n+9){--a:#455a64;--soft:#eef2f4;--tint:#e3eaee;}
+  .cards .card:nth-child(10n+10){--a:#00838f;--soft:#e4f5f7;--tint:#d6eef1;}
+
+  /* ================= SCROLL BUTTONS ================= */
+  .scroll-stack{
+    position:fixed;right:20px;bottom:24px;z-index:800;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .scroll-btn{
+    width:60px;height:60px;border-radius:50%;
+    border:none;cursor:pointer;
+    font-size:24px;color:#fff;line-height:1;
+    background:linear-gradient(145deg,#0f4c81,#1d8a8a);
+    box-shadow:0 8px 20px rgba(15,76,129,.42);
+    transition:.22s;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .scroll-btn:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 12px 26px rgba(15,76,129,.55);}
+  .scroll-btn:active{transform:scale(.95);}
+  .scroll-btn.top{background:linear-gradient(145deg,#e07a00,#f6b93b);box-shadow:0 8px 20px rgba(224,122,0,.45);}
+
+  /* ================= FOOTER ================= */
+  .footer{
+    text-align:center;padding:34px 20px 10px;color:var(--muted);font-size:17px;
+  }
+  .footer b{color:#0f4c81;}
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width:760px){
+    body{font-size:20px;}
+    .hero{padding:24px 20px;}
+    .hero h1{font-size:29px;}
+    .section-title{font-size:23px;padding:15px 18px;}
+    .topbar-title{display:none;}
+    .logo-text b{font-size:17px;}
+    .card-head{padding:12px 16px;gap:10px;}
+    .qbox,.abox{padding:16px;}
+    .scroll-btn{width:52px;height:52px;font-size:21px;}
+    .pattern-table{font-size:15.5px;}
+    .pattern-table th,.pattern-table td{padding:8px;}
+  }
+
+  @media print{
+    .topbar,.sidebar,.overlay,.scroll-stack{display:none !important;}
+    body{background:#fff;font-size:12pt;}
+    .card{break-inside:avoid;box-shadow:none;border:1px solid #ccc;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar">
+  <button class="hamburger" id="menuBtn" aria-label="Open contents" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">
+    <div class="logo-badge">NS</div>
+    <div class="logo-text">
+      <b>Prepared by Narayan Sir</b>
+      <small>English Learning Zone</small>
+    </div>
+  </div>
+  <div class="topbar-title">
+    <strong>Grade 9 English</strong>
+    Writing Practice Bank · Q5–Q8
+  </div>
+</header>
+
+<!-- ================= OVERLAY ================= -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ================= SIDEBAR ================= -->
+<nav class="sidebar" id="sidebar" aria-label="Table of contents">
+  <div class="nav-head">
+    <span>📚 Contents</span>
+    <button class="nav-close" id="navClose" aria-label="Close contents">✕</button>
+  </div>
+
+  <div class="nav-scroll">
+    <a class="nav-link" href="#top">🏠 Home / Overview</a>
+
+    <a class="nav-sec" href="#sec-q5">Question 5 — Guided Writing I</a>
+    <a class="nav-link" href="#q5-1">Q5.1 &nbsp;Library Rules</a>
+    <a class="nav-link" href="#q5-2">Q5.2 &nbsp;Computer Lab Rules</a>
+    <a class="nav-link" href="#q5-3">Q5.3 &nbsp;Science Lab Rules</a>
+    <a class="nav-link" href="#q5-4">Q5.4 &nbsp;Connect Wireless Earbuds</a>
+    <a class="nav-link" href="#q5-5">Q5.5 &nbsp;How to Send an Email</a>
+    <a class="nav-link" href="#q5-6">Q5.6 &nbsp;Recipe: Black Tea</a>
+    <a class="nav-link" href="#q5-7">Q5.7 &nbsp;Recipe: Vegetable Momo</a>
+    <a class="nav-link" href="#q5-8">Q5.8 &nbsp;Recipe: Aloo Achar</a>
+    <a class="nav-link" href="#q5-9">Q5.9 &nbsp;Notice: Sports Week</a>
+    <a class="nav-link" href="#q5-10">Q5.10 Notice: Blood Donation</a>
+    <a class="nav-link" href="#q5-11">Q5.11 Notice: Parents–Teachers Meeting</a>
+    <a class="nav-link" href="#q5-12">Q5.12 Advertisement: Smartphone</a>
+    <a class="nav-link" href="#q5-13">Q5.13 Advertisement: School Bag</a>
+    <a class="nav-link" href="#q5-14">Q5.14 Advertisement: Poon Hill Trek</a>
+    <a class="nav-link" href="#q5-15">Q5.15 Paragraph: Reading Habit</a>
+    <a class="nav-link" href="#q5-16">Q5.16 Pie Chart: Expenditure</a>
+    <a class="nav-link" href="#q5-17">Q5.17 Bar Chart: Electric Vehicles</a>
+    <a class="nav-link" href="#q5-18">Q5.18 Line Graph: Temperature</a>
+    <a class="nav-link" href="#q5-19">Q5.19 Table: Favourite Sports</a>
+    <a class="nav-link" href="#q5-20">Q5.20 Pie Chart: A Student's Day</a>
+
+    <a class="nav-sec" href="#sec-q6">Question 6 — Guided Writing II</a>
+    <a class="nav-link" href="#q6-1">Q6.1 &nbsp;News: Science Quiz Win</a>
+    <a class="nav-link" href="#q6-2">Q6.2 &nbsp;News: Clean-up Drive</a>
+    <a class="nav-link" href="#q6-3">Q6.3 &nbsp;News: Free Health Camp</a>
+    <a class="nav-link" href="#q6-4">Q6.4 &nbsp;Story: The Thirsty Crow</a>
+    <a class="nav-link" href="#q6-5">Q6.5 &nbsp;Story: The Honest Woodcutter</a>
+    <a class="nav-link" href="#q6-6">Q6.6 &nbsp;Story: The Lion and the Mouse</a>
+    <a class="nav-link" href="#q6-7">Q6.7 &nbsp;Condolence: Former Principal</a>
+    <a class="nav-link" href="#q6-8">Q6.8 &nbsp;Condolence: Folk Singer</a>
+    <a class="nav-link" href="#q6-9">Q6.9 &nbsp;Condolence: Classmate's Mother</a>
+    <a class="nav-link" href="#q6-10">Q6.10 Congratulations: Science Exhibition</a>
+    <a class="nav-link" href="#q6-11">Q6.11 Congratulations: Best Teacher Award</a>
+    <a class="nav-link" href="#q6-12">Q6.12 Congratulations: Football Team</a>
+    <a class="nav-link" href="#q6-13">Q6.13 Invitation: Birthday Party</a>
+    <a class="nav-link" href="#q6-14">Q6.14 Invitation: Annual Day</a>
+    <a class="nav-link" href="#q6-15">Q6.15 Invitation: Tihar Holidays</a>
+    <a class="nav-link" href="#q6-16">Q6.16 Thank You: Birthday Gift</a>
+    <a class="nav-link" href="#q6-17">Q6.17 Thank You: Hospitality</a>
+    <a class="nav-link" href="#q6-18">Q6.18 Thank You: Doctor's Talk</a>
+    <a class="nav-link" href="#q6-19">Q6.19 Biography: Mahabir Pun</a>
+    <a class="nav-link" href="#q6-20">Q6.20 Biography: Bhanubhakta Acharya</a>
+
+    <a class="nav-sec" href="#sec-q7">Question 7 — Free Writing I</a>
+    <a class="nav-link" href="#q7-1">Q7.1 &nbsp;Paragraph: Social Media</a>
+    <a class="nav-link" href="#q7-2">Q7.2 &nbsp;Paragraph: Sports and Games</a>
+    <a class="nav-link" href="#q7-3">Q7.3 &nbsp;Paragraph: Punctuality</a>
+    <a class="nav-link" href="#q7-4">Q7.4 &nbsp;Paragraph: Online Learning</a>
+    <a class="nav-link" href="#q7-5">Q7.5 &nbsp;Paragraph: Memorable Festival</a>
+    <a class="nav-link" href="#q7-6">Q7.6 &nbsp;Paragraph: A Day I Will Never Forget</a>
+    <a class="nav-link" href="#q7-7">Q7.7 &nbsp;Paragraph: Mobile Phones in School</a>
+    <a class="nav-link" href="#q7-8">Q7.8 &nbsp;Paragraph: Junk Food</a>
+    <a class="nav-link" href="#q7-9">Q7.9 &nbsp;Leave: Sick Leave</a>
+    <a class="nav-link" href="#q7-10">Q7.10 Leave: Sister's Wedding</a>
+    <a class="nav-link" href="#q7-11">Q7.11 Leave: Family Funeral</a>
+    <a class="nav-link" href="#q7-12">Q7.12 Leave: Teacher Training</a>
+    <a class="nav-link" href="#q7-13">Q7.13 Job: Office Assistant</a>
+    <a class="nav-link" href="#q7-14">Q7.14 Job: Hotel Receptionist</a>
+    <a class="nav-link" href="#q7-15">Q7.15 Job: Trekking Guide</a>
+    <a class="nav-link" href="#q7-16">Q7.16 Job: Sales Assistant</a>
+    <a class="nav-link" href="#q7-17">Q7.17 Dialogue: Buying a Phone</a>
+    <a class="nav-link" href="#q7-18">Q7.18 Dialogue: Holiday Plan</a>
+    <a class="nav-link" href="#q7-19">Q7.19 Dialogue: Telehealth</a>
+    <a class="nav-link" href="#q7-20">Q7.20 Dialogue: Asking a Teacher</a>
+
+    <a class="nav-sec" href="#sec-q8">Question 8 — Free Writing II</a>
+    <a class="nav-link" href="#q8-1">Q8.1 &nbsp;Personal Letter: A Trip</a>
+    <a class="nav-link" href="#q8-2">Q8.2 &nbsp;Personal Letter: Advice</a>
+    <a class="nav-link" href="#q8-3">Q8.3 &nbsp;Official Letter: Educational Tour</a>
+    <a class="nav-link" href="#q8-4">Q8.4 &nbsp;Official Letter: Road Repair</a>
+    <a class="nav-link" href="#q8-5">Q8.5 &nbsp;Editor: Plastic Pollution</a>
+    <a class="nav-link" href="#q8-6">Q8.6 &nbsp;Editor: Stray Dogs</a>
+    <a class="nav-link" href="#q8-7">Q8.7 &nbsp;Editor: Public Transport</a>
+    <a class="nav-link" href="#q8-8">Q8.8 &nbsp;Email: Tihar Festival</a>
+    <a class="nav-link" href="#q8-9">Q8.9 &nbsp;Email: School Tour</a>
+    <a class="nav-link" href="#q8-10">Q8.10 Email: Hotel Booking</a>
+    <a class="nav-link" href="#q8-11">Q8.11 Essay: An Unforgettable Trek</a>
+    <a class="nav-link" href="#q8-12">Q8.12 Essay: Social Media</a>
+    <a class="nav-link" href="#q8-13">Q8.13 Essay: A Busy Market Place</a>
+    <a class="nav-link" href="#q8-14">Q8.14 Essay: Science and Technology</a>
+    <a class="nav-link" href="#q8-15">Q8.15 Diary: Annual Sports Day</a>
+    <a class="nav-link" href="#q8-16">Q8.16 Diary: Helping a Stranger</a>
+    <a class="nav-link" href="#q8-17">Q8.17 Article: Climate Change</a>
+    <a class="nav-link" href="#q8-18">Q8.18 Article: Tourism in Nepal</a>
+    <a class="nav-link" href="#q8-19">Q8.19 Film Review: Kabaddi</a>
+    <a class="nav-link" href="#q8-20">Q8.20 Book Review: The Alchemist</a>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="wrap" id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="pill">CDC Test Specification Grid</span>
+    <span class="pill">Grades 9–10</span>
+    <span class="pill">80 Practice Items</span>
+    <h1>Compulsory English: Grade 9<br>Writing Practice Bank — Questions 5, 6, 7 &amp; 8</h1>
+    <p class="sub">Questions with full model answers, written in simple Grade 9 English. Use the ☰ menu at the top-left to jump to any question, and the ▲ ▼ buttons for quick scrolling.</p>
+
+    <table class="pattern-table">
+      <thead>
+        <tr><th>Q.</th><th>Section</th><th>Task types (from the grid)</th><th>Marks</th><th>Words</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>5</b></td><td>Guided Writing I</td><td>paragraph, description of tables/charts/diagrams, set of instructions, recipe, advertisement, notice, rules and regulations</td><td>5</td><td>about 100</td></tr>
+        <tr><td><b>6</b></td><td>Guided Writing II</td><td>news story, skeleton story, message of condolence, message of congratulations, invitation letter, thank you letter, biography</td><td>5</td><td>about 100</td></tr>
+        <tr><td><b>7</b></td><td>Free Writing I</td><td>paragraph (views, opinion, experience, feeling), leave application, job application, dialogue</td><td>6</td><td>about 150</td></tr>
+        <tr><td><b>8</b></td><td>Free Writing II</td><td>personal/official letter, letter to the editor, email, short essay, diary, newspaper article, book/film review</td><td>8</td><td>about 200</td></tr>
+      </tbody>
+    </table>
+    <p class="data-note">All chart and table data are imaginary or approximate and are meant for practice only.</p>
+  </section>
+
+  <!-- ============================================================
+       QUESTION 5
+  ============================================================ -->
+  <h2 class="section-title s5" id="sec-q5">Question 5: Guided Writing I
+    <small>5 marks · about 100 words · Write as directed. Use the clues and the layout appropriate to the text type.</small>
+  </h2>
+
+  <div class="cards">
+
+    <!-- Q5.1 -->
+    <article class="card" id="q5-1">
+      <div class="card-head"><span class="qnum">Q5.1</span><span class="qtype">Rules and Regulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a set of rules and regulations for the users of your school library in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> silence must be maintained — bring library card — handle books with care — no food or drinks — return books within 7 days — fine for late return</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Rules and Regulations for Library Users</h4>
+        <ol>
+          <li>Students must keep silence in the library.</li>
+          <li>Everyone must bring the library card.</li>
+          <li>Handle the books with care. Do not tear or write on them.</li>
+          <li>Food and drinks are not allowed inside the library.</li>
+          <li>Books must be returned within seven days.</li>
+          <li>Students who return books late must pay a fine.</li>
+          <li>Put the books back on the shelf after reading.</li>
+          <li>Anyone who breaks these rules will not be allowed to use the library.</li>
+        </ol>
+        <p class="sign">— By the Librarian, Shree Janajagriti Secondary School</p>
+      </div>
+    </article>
+
+    <!-- Q5.2 -->
+    <article class="card" id="q5-2">
+      <div class="card-head"><span class="qnum">Q5.2</span><span class="qtype">Rules and Regulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a set of rules and regulations for the students using the computer lab of your school in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> enter with the teacher's permission — no food or drinks — do not install software — no pen drives without permission — shut down computers after use — report faults immediately</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Rules and Regulations of the Computer Lab</h4>
+        <ol>
+          <li>Students must enter the lab only with the teacher's permission.</li>
+          <li>Food and drinks are strictly prohibited in the lab.</li>
+          <li>Do not install any software on the computers.</li>
+          <li>Students must not use a pen drive without permission.</li>
+          <li>Handle the keyboard, mouse and screen carefully.</li>
+          <li>Shut down the computer properly after use.</li>
+          <li>Report any fault to the teacher at once.</li>
+          <li>Keep the lab clean and silent.</li>
+        </ol>
+        <p>Students who break these rules will not be allowed to use the lab.</p>
+      </div>
+    </article>
+
+    <!-- Q5.3 -->
+    <article class="card" id="q5-3">
+      <div class="card-head"><span class="qnum">Q5.3</span><span class="qtype">Rules and Regulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a set of rules and regulations for the students working in the science laboratory in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> wear an apron — no running or playing — handle chemicals carefully — never taste any substance — wash hands after the experiment — report accidents to the teacher</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Rules and Regulations of the Science Laboratory</h4>
+        <ol>
+          <li>Students must wear an apron in the laboratory.</li>
+          <li>Running and playing are not allowed.</li>
+          <li>Handle the chemicals very carefully.</li>
+          <li>Never taste any substance.</li>
+          <li>Do not start an experiment without the teacher's instruction.</li>
+          <li>Wash your hands after the experiment.</li>
+          <li>Report any accident to the teacher immediately.</li>
+          <li>Keep the table and equipment clean after work.</li>
+        </ol>
+        <p>Everyone must follow these rules for their own safety.</p>
+      </div>
+    </article>
+
+    <!-- Q5.4 -->
+    <article class="card" id="q5-4">
+      <div class="card-head"><span class="qnum">Q5.4</span><span class="qtype">Instructions</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a set of instructions on <b>'How to connect wireless earbuds to a Bluetooth-enabled phone'</b> in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> charge the earbuds — turn on Bluetooth in the phone — open the case / press the pairing button — select the earbuds' name from the list — wait for the confirmation sound</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>How to Connect Wireless Earbuds to a Bluetooth Phone</h4>
+        <p>Follow these steps.</p>
+        <ol>
+          <li>First, charge the earbuds fully.</li>
+          <li>Then, go to the settings of your phone and turn on the Bluetooth.</li>
+          <li>Open the case of the earbuds. Press the pairing button for a few seconds.</li>
+          <li>Now, look at the list of devices on your phone.</li>
+          <li>Select the name of your earbuds from the list.</li>
+          <li>Wait for a moment. You will hear a confirmation sound.</li>
+          <li>Finally, play some music to check if it is working.</li>
+        </ol>
+        <p>Now your earbuds are connected to your phone.</p>
+      </div>
+    </article>
+
+    <!-- Q5.5 -->
+    <article class="card" id="q5-5">
+      <div class="card-head"><span class="qnum">Q5.5</span><span class="qtype">Instructions</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a set of instructions on <b>'How to send an email'</b> in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> open the email account — click 'Compose' — type the receiver's address — write the subject — type the message / attach file — check once — click 'Send'</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>How to Send an Email</h4>
+        <p>Follow these steps to send an email.</p>
+        <ol>
+          <li>First, open your email account and log in.</li>
+          <li>Click on the "Compose" button.</li>
+          <li>Type the email address of the receiver in the "To" box.</li>
+          <li>Write the subject in the subject box.</li>
+          <li>Then, type your message in the big box.</li>
+          <li>If you want, attach a file by clicking on the clip sign.</li>
+          <li>Read your message once to check mistakes.</li>
+          <li>Finally, click on the "Send" button.</li>
+        </ol>
+        <p>Your email is sent now.</p>
+      </div>
+    </article>
+
+    <!-- Q5.6 -->
+    <article class="card" id="q5-6">
+      <div class="card-head"><span class="qnum">Q5.6</span><span class="qtype">Recipe</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a recipe for making a cup of black tea in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> Ingredients: water, tea leaves, sugar, ginger (optional) — boil water — add tea leaves and ginger — simmer for two minutes — add sugar — strain into cups — serve hot</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Recipe for Black Tea</h4>
+        <p><b>Ingredients:</b> 2 cups of water, 2 teaspoons of tea leaves, sugar, a small piece of ginger</p>
+        <p><b>Method:</b></p>
+        <ol>
+          <li>First, boil the water in a pan.</li>
+          <li>Add the tea leaves and crushed ginger to the boiling water.</li>
+          <li>Let it simmer for two minutes.</li>
+          <li>Then, add sugar as you like.</li>
+          <li>Stir it well with a spoon.</li>
+          <li>Strain the tea into the cups.</li>
+          <li>Serve it hot.</li>
+        </ol>
+        <p>Enjoy your hot black tea.</p>
+      </div>
+    </article>
+
+    <!-- Q5.7 -->
+    <article class="card" id="q5-7">
+      <div class="card-head"><span class="qnum">Q5.7</span><span class="qtype">Recipe</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a recipe for preparing vegetable momo in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> Ingredients: flour, cabbage, carrot, onion, ginger-garlic paste, spices, oil, salt — knead dough — prepare the filling — roll the dough into small circles — fill and fold — steam for 10-12 minutes — serve with achar</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Recipe for Vegetable Momo</h4>
+        <p><b>Ingredients:</b> flour, cabbage, carrot, onion, ginger-garlic paste, spices, oil, salt</p>
+        <p><b>Method:</b></p>
+        <ol>
+          <li>First, mix flour with water and knead it into soft dough.</li>
+          <li>Cut the cabbage, carrot and onion into very small pieces.</li>
+          <li>Mix them with ginger-garlic paste, spices, oil and salt. The filling is ready.</li>
+          <li>Make small balls of the dough and roll them into thin circles.</li>
+          <li>Put the filling in the middle and fold the edges.</li>
+          <li>Steam the momos for 10 to 12 minutes.</li>
+          <li>Serve them hot with achar.</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- Q5.8 -->
+    <article class="card" id="q5-8">
+      <div class="card-head"><span class="qnum">Q5.8</span><span class="qtype">Recipe</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a recipe for making potato pickle (aloo achar) in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> Ingredients: boiled potatoes, cucumber, sesame powder, chilli powder, lemon juice, salt, mustard oil, coriander — peel and cut — mix all — add oil and lemon juice — keep for 10 minutes — serve</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Recipe for Aloo Achar</h4>
+        <p><b>Ingredients:</b> boiled potatoes, cucumber, sesame powder, chilli powder, lemon juice, salt, mustard oil, coriander</p>
+        <p><b>Method:</b></p>
+        <ol>
+          <li>First, peel the boiled potatoes and cut them into small pieces.</li>
+          <li>Cut the cucumber into small pieces too.</li>
+          <li>Put them in a big bowl.</li>
+          <li>Add sesame powder, chilli powder and salt.</li>
+          <li>Then, add mustard oil and lemon juice.</li>
+          <li>Mix everything well with a spoon.</li>
+          <li>Put chopped coriander on top.</li>
+          <li>Keep it for ten minutes and then serve.</li>
+        </ol>
+        <p>It tastes very good with rice.</p>
+      </div>
+    </article>
+
+    <!-- Q5.9 -->
+    <article class="card" id="q5-9">
+      <div class="card-head"><span class="qnum">Q5.9</span><span class="qtype">Notice</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school is going to organise a Sports Week. As the head teacher / school secretary, write a notice in about 100 words using the clues given below.</p>
+        <p class="clues"><b>Clues:</b> Shree Janajagriti Secondary School, Bhanu-10, Tanahun — date of notice — Sports Week 10-14 December 2026 — football, volleyball, athletics, tug of war — wear sports uniform — register names with the sports teacher by 5 December</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center">Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p class="center">19 November 2026</p>
+        <p class="center strong">NOTICE<br>Sports Week</p>
+        <p>This is to inform all the students that our school is going to organise a Sports Week from 10 to 14 December 2026. The events will be football, volleyball, athletics and tug of war. All students must wear the sports uniform. Those who want to take part should register their names with the sports teacher by 5 December. Let us take part in large numbers and enjoy the week.</p>
+        <p class="sign">Head Teacher</p>
+      </div>
+    </article>
+
+    <!-- Q5.10 -->
+    <article class="card" id="q5-10">
+      <div class="card-head"><span class="qnum">Q5.10</span><span class="qtype">Notice</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school Junior Red Cross Circle is organising a blood donation camp. Write a notice in about 100 words using the clues given below.</p>
+        <p class="clues"><b>Clues:</b> name of school — date of notice — Blood Donation Camp — date, time and venue — open to teachers, staff and guardians above 18 years — bring citizenship card — contact the coordinator</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center">Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p class="center">19 November 2026</p>
+        <p class="center strong">NOTICE<br>Blood Donation Camp</p>
+        <p>This is to inform everyone that the Junior Red Cross Circle of our school is going to organise a Blood Donation Camp on 28 November 2026 at 10 am in the school hall. Teachers, staff and guardians above 18 years can donate blood. Please bring your citizenship card. Blood can save the life of a person. So, we request everyone to take part. For more details, please contact the coordinator.</p>
+        <p class="sign">Coordinator<br>Junior Red Cross Circle</p>
+      </div>
+    </article>
+
+    <!-- Q5.11 -->
+    <article class="card" id="q5-11">
+      <div class="card-head"><span class="qnum">Q5.11</span><span class="qtype">Notice</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school is going to hold a Parents-Teachers Meeting. Prepare a notice in about 100 words on behalf of the head teacher using the clues given below.</p>
+        <p class="clues"><b>Clues:</b> name of school — date of notice — Parents-Teachers Meeting — Saturday, 10 am, school hall — discuss progress of students — all guardians requested to attend — bring the progress card</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center">Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p class="center">19 November 2026</p>
+        <p class="center strong">NOTICE<br>Parents-Teachers Meeting</p>
+        <p>This is to inform all the guardians that a Parents-Teachers Meeting will be held on Saturday, 28 November 2026 at 10 am in the school hall. We will discuss the progress of the students in the meeting. All the guardians are requested to attend the meeting without fail. Please bring the progress card of your child.</p>
+        <p class="sign">Head Teacher</p>
+      </div>
+    </article>
+
+    <!-- Q5.12 -->
+    <article class="card" id="q5-12">
+      <div class="card-head"><span class="qnum">Q5.12</span><span class="qtype">Advertisement</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Design an advertisement for a new smartphone in about 100 words. Use the prompts given below.</p>
+        <p class="clues"><b>Clues:</b> headline — picture/illustration (describe) — features: 6.5-inch display, 50 MP camera, long-lasting battery — offer: 20% discount at Dashain — warranty: 1 year — contact address</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">NEW SMARTPHONE: STAR X</p>
+        <p class="center strong">"Capture Every Moment!"</p>
+        <p class="center"><i>[Picture: a smartphone with a camera and a bright screen]</i></p>
+        <h4>Features</h4>
+        <ul>
+          <li>6.5-inch big display</li>
+          <li>50 MP clear camera</li>
+          <li>Long-lasting battery</li>
+          <li>Fast and smooth work</li>
+        </ul>
+        <p><b>Special Offer:</b> 20% discount in the Dashain festival!</p>
+        <p><b>Warranty:</b> One year</p>
+        <p>Buy it today from <b>Star Mobile House, New Road, Pokhara.</b><br><b>Call: 9800000000</b></p>
+      </div>
+    </article>
+
+    <!-- Q5.13 -->
+    <article class="card" id="q5-13">
+      <div class="card-head"><span class="qnum">Q5.13</span><span class="qtype">Advertisement</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Design an advertisement for a school bag in about 100 words. Use the prompts given below.</p>
+        <p class="clues"><b>Clues:</b> headline — picture — features: waterproof, lightweight, many pockets, strong zip — offer: free water bottle — warranty: 6 months — shop name and phone number</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">SMART SCHOOL BAG</p>
+        <p class="center strong">"Light to Carry, Strong to Last!"</p>
+        <p class="center"><i>[Picture: a colourful school bag with many pockets]</i></p>
+        <h4>Features</h4>
+        <ul>
+          <li>Waterproof</li>
+          <li>Very light weight</li>
+          <li>Many pockets</li>
+          <li>Strong zip</li>
+        </ul>
+        <p><b>Special Offer:</b> Get a free water bottle with every bag!</p>
+        <p><b>Warranty:</b> Six months</p>
+        <p>Visit <b>Student Bag Centre, Main Road, Butwal.</b><br><b>Call: 9811111111</b></p>
+      </div>
+    </article>
+
+    <!-- Q5.14 -->
+    <article class="card" id="q5-14">
+      <div class="card-head"><span class="qnum">Q5.14</span><span class="qtype">Advertisement</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Prepare an advertisement for a Poon Hill Trek package on behalf of a travel agency in about 100 words. Use the prompts given below.</p>
+        <p class="clues"><b>Clues:</b> headline — picture (Himalayan view) — features: 8 days, guide, meals, lodge, yoga session — offer: group discount of 15% — warranty/guarantee: safe journey — contact details</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">POON HILL TREK PACKAGE</p>
+        <p class="center strong">"Feel the Beauty of the Himalayas!"</p>
+        <p class="center"><i>[Picture: snow-capped mountains at sunrise]</i></p>
+        <p>Join our <b>8-day Poon Hill Trek</b> with Himalayan Travels and Tours.</p>
+        <h4>Package includes</h4>
+        <ul>
+          <li>An experienced guide</li>
+          <li>Meals and lodge</li>
+          <li>Yoga session every morning</li>
+        </ul>
+        <p><b>Special Offer:</b> 15% discount for a group</p>
+        <p><b>Guarantee:</b> Safe and happy journey</p>
+        <p>Book now at <b>Himalayan Travels and Tours, Lakeside, Pokhara.</b><br><b>Call: 9822222222</b></p>
+      </div>
+    </article>
+
+    <!-- Q5.15 -->
+    <article class="card" id="q5-15">
+      <div class="card-head"><span class="qnum">Q5.15</span><span class="qtype">Paragraph (Guided)</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a paragraph on <b>'The Importance of Reading Habit'</b> in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> increases knowledge — improves vocabulary and writing — reduces stress — develops imagination — how to build the habit</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>The Importance of Reading Habit</h4>
+        <p>Reading habit is very important in our life. When we read books, we get a lot of knowledge. It also helps us to learn new words. So, our vocabulary and writing become better. Reading can also reduce stress. When we feel sad or tired, we can read a good story and feel relaxed. Reading also develops our imagination. We can imagine new places and people. To make a reading habit, we should read a little every day. We can start with short stories and then read bigger books. We can also visit the library. In conclusion, a good reading habit makes us wise and successful.</p>
+      </div>
+    </article>
+
+    <!-- Q5.16 -->
+    <article class="card" id="q5-16">
+      <div class="card-head"><span class="qnum">Q5.16</span><span class="qtype">Chart Description — Pie Chart</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The pie chart below shows how a Nepali family spends its monthly income. Write an interpretation of the chart in about 100 words, making comparisons where necessary.</p>
+        <p class="clues"><b>Chart data (imaginary):</b> Food 40% · Education 20% · Housing 15% · Health 10% · Transport 8% · Others 7%</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Monthly Household Expenditure of a Nepali Family</h4>
+        <p>The pie chart shows how a Nepali family spends its monthly income on six things.</p>
+        <p>The family spends the largest part of its income on food. It is 40 percent. Education is the second biggest cost, with 20 percent, which is half of the food cost. Housing takes 15 percent and health takes 10 percent. Transport costs 8 percent. The smallest part is for other things, with only 7 percent.</p>
+        <p>If we compare, food costs more than five times as much as other things. Housing is more than health. Overall, the family spends most of its money on the basic needs like food, education and housing.</p>
+      </div>
+    </article>
+
+    <!-- Q5.17 -->
+    <article class="card" id="q5-17">
+      <div class="card-head"><span class="qnum">Q5.17</span><span class="qtype">Chart Description — Bar Chart</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The bar chart below shows the number of electric vehicles registered in a city from 2019 to 2023. Write an interpretation of the chart in about 100 words, making comparisons where necessary.</p>
+        <p class="clues"><b>Chart data (imaginary):</b> 2019 — 2,000 · 2020 — 3,500 · 2021 — 6,000 · 2022 — 11,000 · 2023 — 18,000</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Electric Vehicles Registered in a City (2019–2023)</h4>
+        <p>The bar chart shows the number of electric vehicles registered in a city from 2019 to 2023.</p>
+        <p>In 2019, only 2 thousand electric vehicles were registered. In 2020, the number rose to 3.5 thousand. Then, it climbed to 6 thousand in 2021. After that, it went up quickly to 11 thousand in 2022. The highest number was in 2023. It reached 18 thousand.</p>
+        <p>If we compare, the number in 2023 is nine times more than in 2019. The increase was slow in the first years but very fast in the last two years. Overall, the use of electric vehicles is increasing every year.</p>
+      </div>
+    </article>
+
+    <!-- Q5.18 -->
+    <article class="card" id="q5-18">
+      <div class="card-head"><span class="qnum">Q5.18</span><span class="qtype">Chart Description — Line Graph</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The line graph below shows the average monthly temperature of a hill city. Describe the graph in about 100 words, mentioning the highest, the lowest and the overall trend.</p>
+        <p class="clues"><b>Graph data (approximate):</b> Jan 10 · Feb 12 · Mar 16 · Apr 19 · May 22 · Jun 24 · Jul 25 · Aug 25 · Sep 23 · Oct 20 · Nov 15 · Dec 11 (°C)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Average Monthly Temperature of a Hill City</h4>
+        <p>The line graph shows the average monthly temperature of a hill city in a year.</p>
+        <p>The temperature was lowest in January. It was 10 degrees Celsius. Then it started to rise slowly. It was 16 degrees in March and 22 degrees in May. The temperature reached its highest point in July and August. It was 25 degrees in both months. After that, the temperature began to fall. It was 20 degrees in October and 11 degrees in December.</p>
+        <p>Overall, the city is cold in winter and warm in summer. The difference between the highest and the lowest temperature is 15 degrees.</p>
+      </div>
+    </article>
+
+    <!-- Q5.19 -->
+    <article class="card" id="q5-19">
+      <div class="card-head"><span class="qnum">Q5.19</span><span class="qtype">Table Description</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The table below shows the favourite sports of Grade 9 students (in number). Write a description of the table in about 100 words, making comparisons between boys and girls.</p>
+        <p class="clues"><b>Table data (imaginary):</b> Football — Boys 45, Girls 20 · Volleyball — Boys 25, Girls 40 · Cricket — Boys 20, Girls 15 · Badminton — Boys 10, Girls 25</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Favourite Sports of Grade 9 Students</h4>
+        <p>The table shows the favourite sports of boys and girls of Grade 9.</p>
+        <p>Football is the most popular sport among boys. It is the choice of 45 boys, but only 20 girls like it. On the other hand, volleyball is the first choice of girls. 40 girls like it, while 25 boys like it. Cricket is liked by 20 boys and 15 girls. Badminton is the least popular among boys, with only 10 boys. But 25 girls like it.</p>
+        <p>Overall, boys like football more and girls like volleyball more. Cricket is the least different between boys and girls.</p>
+      </div>
+    </article>
+
+    <!-- Q5.20 -->
+    <article class="card" id="q5-20">
+      <div class="card-head"><span class="qnum">Q5.20</span><span class="qtype">Chart Description — Pie Chart</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The pie chart below shows how a Grade 9 student spends 24 hours of a school day. Write an interpretation of the chart in about 100 words.</p>
+        <p class="clues"><b>Chart data (imaginary):</b> Sleep 33% · School 25% · Study at home 12% · Play/sports 8% · Meals 8% · Phone/TV 8% · Household help 4%</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>How a Grade 9 Student Spends a Day</h4>
+        <p>The pie chart shows how a Grade 9 student spends 24 hours on a school day.</p>
+        <p>The student spends the most time on sleeping. It is 8 hours, which is one third of the day. School takes 6 hours, so it is the second biggest part. Then the student studies for 3 hours at home. Play, meals and phone or TV take 2 hours each. The smallest part is household help. It takes only 1 hour.</p>
+        <p>If we compare, the student spends more time on sleep than on school. Also, the student spends more time on phone or TV than on helping at home. Overall, the student's day is well divided between study and rest.</p>
+      </div>
+    </article>
+
+  </div><!-- /cards Q5 -->
+
+
+  <!-- ============================================================
+       QUESTION 6
+  ============================================================ -->
+  <h2 class="section-title s6" id="sec-q6">Question 6: Guided Writing II
+    <small>5 marks · about 100 words · Use the clues given and write in about 100 words.</small>
+  </h2>
+
+  <div class="cards">
+
+    <!-- Q6.1 -->
+    <article class="card" id="q6-1">
+      <div class="card-head"><span class="qnum">Q6.1</span><span class="qtype">News Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a news story in about 100 words using the outline given below. Give a suitable headline and include a byline and dateline.</p>
+        <p class="clues"><b>Clues:</b> School wins inter-school science quiz — Shree Janajagriti Secondary School, Tanahun — held at Damauli — 12 schools participated — team captain Aarav Sharma — prize Rs 25,000 and trophy — Principal expresses happiness</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>School Wins Inter-School Science Quiz</h4>
+        <p><i>By Our Reporter</i><br><b>Damauli, Tanahun, 18 November</b></p>
+        <p>Shree Janajagriti Secondary School of Tanahun won the Inter-School Science Quiz held at Damauli yesterday. Twelve schools took part in the competition. The team of the school was led by captain Aarav Sharma. The winning team got a trophy and a cash prize of Rs 25,000. Principal of the school said he was very happy with the success of the students. He thanked the teachers and the parents for their support. The students also said that they worked hard for many weeks.</p>
+      </div>
+    </article>
+
+    <!-- Q6.2 -->
+    <article class="card" id="q6-2">
+      <div class="card-head"><span class="qnum">Q6.2</span><span class="qtype">News Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a news story in about 100 words using the outline given below.</p>
+        <p class="clues"><b>Clues:</b> Bhaktapur Municipality organises clean-up drive — 1,200 kg garbage collected from the riverbank — 300 volunteers including students and police — Mayor inaugurates — waste handed over to the municipality — people urged to keep rivers clean</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Clean-up Drive Collects 1,200 kg Garbage</h4>
+        <p><i>By Our Reporter</i><br><b>Bhaktapur, 17 November</b></p>
+        <p>Bhaktapur Municipality organised a clean-up drive along the riverbank on Sunday. The Mayor inaugurated the programme. About 300 volunteers, including students and police, took part. They collected 1,200 kg of garbage from the riverbank. The garbage was handed over to the municipality. The Mayor thanked everyone for their help. He also requested the people not to throw waste in the river and to keep it clean.</p>
+      </div>
+    </article>
+
+    <!-- Q6.3 -->
+    <article class="card" id="q6-3">
+      <div class="card-head"><span class="qnum">Q6.3</span><span class="qtype">News Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a news story in about 100 words using the outline given below.</p>
+        <p class="clues"><b>Clues:</b> Free health camp in a remote village — Gorkha district — organised by local youth club and a hospital — 400 villagers examined — free medicines — doctors give advice on hygiene — telehealth service promised</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Free Health Camp Held in Remote Village</h4>
+        <p><i>By Our Reporter</i><br><b>Gorkha, 16 November</b></p>
+        <p>A free health camp was held in a remote village of Gorkha district on Saturday. The local youth club and a hospital organised the camp together. More than 400 villagers were checked by the doctors. The villagers also got free medicines. The doctors gave advice about health and hygiene. The organisers said that they would start a telehealth service for the village so that people can talk to doctors on the phone. The villagers were very happy with the programme.</p>
+      </div>
+    </article>
+
+    <!-- Q6.4 -->
+    <article class="card" id="q6-4">
+      <div class="card-head"><span class="qnum">Q6.4</span><span class="qtype">Skeleton Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Develop the following outline into a story in about 100 words. Give a suitable title and write the moral at the end.</p>
+        <p class="clues"><b>Clues:</b> a crow — very thirsty — finds a pitcher with little water — cannot reach — drops pebbles one by one — water rises — drinks and flies away</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>The Thirsty Crow</h4>
+        <p>Once upon a time, a crow was very thirsty. He flew here and there to find water but he could not find any. At last, he saw a pitcher under a tree. There was a little water at the bottom. But his beak could not reach it. He thought for a while. Then he got an idea. He picked up small pebbles and dropped them into the pitcher one by one. Slowly, the water rose up. The crow drank the water and flew away happily.</p>
+        <p><b>Moral:</b> Where there is a will, there is a way.</p>
+      </div>
+    </article>
+
+    <!-- Q6.5 -->
+    <article class="card" id="q6-5">
+      <div class="card-head"><span class="qnum">Q6.5</span><span class="qtype">Skeleton Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Develop the following outline into a story in about 100 words. Give a suitable title and write the moral at the end.</p>
+        <p class="clues"><b>Clues:</b> a poor woodcutter — axe falls into a river — cries — river goddess appears — shows golden and silver axes — he refuses — takes only his iron axe — rewarded with all three — greedy neighbour tries the same — loses his own axe</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>The Honest Woodcutter</h4>
+        <p>There lived a poor woodcutter near a river. One day, his axe fell into the river while he was cutting a tree. He sat down and cried. Then the river goddess came out. She showed him a golden axe, but he said, "It is not mine." She showed him a silver axe, but he refused again. At last, she showed him an iron axe. He said happily, "This is mine." The goddess was pleased with his honesty. She gave him all three axes. A greedy neighbour heard this and tried the same trick. But he lost his own axe.</p>
+        <p><b>Moral:</b> Honesty is the best policy.</p>
+      </div>
+    </article>
+
+    <!-- Q6.6 -->
+    <article class="card" id="q6-6">
+      <div class="card-head"><span class="qnum">Q6.6</span><span class="qtype">Skeleton Story</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Develop the following outline into a story in about 100 words. Give a suitable title and write the moral at the end.</p>
+        <p class="clues"><b>Clues:</b> a lion sleeping — a mouse runs over him — lion catches the mouse — mouse begs for mercy — lion lets him go — lion caught in a hunter's net — mouse cuts the net — lion is saved</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>The Lion and the Mouse</h4>
+        <p>One day, a lion was sleeping in the forest. A little mouse ran over his body and woke him up. The lion got angry and caught the mouse. The mouse begged, "Please forgive me. I will help you one day." The lion laughed but let him go. After some days, the lion was caught in a hunter's net. He roared loudly. The mouse heard it and came running. He cut the net with his sharp teeth. The lion was free and thanked the mouse.</p>
+        <p><b>Moral:</b> A small friend can be a great help.</p>
+      </div>
+    </article>
+
+    <!-- Q6.7 -->
+    <article class="card" id="q6-7">
+      <div class="card-head"><span class="qnum">Q6.7</span><span class="qtype">Message of Condolence</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school's former principal Mr Ram Prasad Adhikari (1950-2026) has passed away. Write a message of condolence on behalf of the school to be published in a newspaper in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> deeply saddened — untimely demise / passed away on 15 November 2026 — dedicated educator — contribution to the school — sincere condolences to the bereaved family — may the departed soul rest in peace</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">HEARTFELT CONDOLENCE</p>
+        <p class="center strong">Mr Ram Prasad Adhikari (1950 – 2026)</p>
+        <p>We are deeply saddened by the untimely demise of our former principal Mr Ram Prasad Adhikari. He passed away on 15 November 2026. He was a dedicated educator. He gave his whole life to improve our school and to make good students. His contribution will always be remembered. At this time of grief, we express our sincere condolences to the bereaved family. May the departed soul rest in peace.</p>
+        <p class="sign">Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+      </div>
+    </article>
+
+    <!-- Q6.8 -->
+    <article class="card" id="q6-8">
+      <div class="card-head"><span class="qnum">Q6.8</span><span class="qtype">Message of Condolence</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>A veteran folk singer, Mr Karna Bahadur Gurung (1948-2026), has died of a heart attack. Write a message of condolence on behalf of your school's Cultural Club in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> shocked and saddened — passed away at Kathmandu — popular folk singer — preserved Nepali music and culture — irreparable loss — condolences to family and fans — eternal peace</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">HEARTFELT CONDOLENCE</p>
+        <p class="center strong">Mr Karna Bahadur Gurung (1948 – 2026)</p>
+        <p>We are shocked and saddened to hear about the death of the popular folk singer Mr Karna Bahadur Gurung. He passed away in Kathmandu due to a heart attack. He saved Nepali music and culture through his beautiful songs. His death is an irreparable loss for all of us. We express our deepest sympathy to his family and fans. May his soul rest in eternal peace.</p>
+        <p class="sign">Cultural Club<br>Shree Janajagriti Secondary School</p>
+      </div>
+    </article>
+
+    <!-- Q6.9 -->
+    <article class="card" id="q6-9">
+      <div class="card-head"><span class="qnum">Q6.9</span><span class="qtype">Message of Condolence</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>The mother of your classmate Sunita Thapa has died after a short illness. Write a message of condolence on behalf of your class in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> very sad to hear the news — Mrs Thapa, a kind and caring mother — deepest sympathy to Sunita and family — we are with you in this difficult time — pray for peace of the departed soul — give strength to bear the loss</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">MESSAGE OF CONDOLENCE</p>
+        <p>We are very sad to hear the news of the death of Mrs Thapa, the mother of our classmate Sunita Thapa. She was a kind and caring mother. We offer our deepest sympathy to Sunita and her family. We are with you in this difficult time. We pray for the peace of the departed soul. May God give you the strength to bear this great loss.</p>
+        <p class="sign">Class 9<br>Shree Janajagriti Secondary School</p>
+      </div>
+    </article>
+
+    <!-- Q6.10 -->
+    <article class="card" id="q6-10">
+      <div class="card-head"><span class="qnum">Q6.10</span><span class="qtype">Message of Congratulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your classmate Binita Rai has won first prize in the District Level Science Exhibition. Write a message of congratulations on behalf of your school to be published in the school newsletter in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> Binita Rai — first prize — District Level Science Exhibition — hard work and creativity — proud of her — best wishes for future success</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">CONGRATULATIONS!</p>
+        <p>We are very happy to know that our classmate <b>Binita Rai</b> has won the first prize in the District Level Science Exhibition. This is the result of her hard work and creativity. She has made our school proud. We are all very proud of her. We heartily congratulate her on this great success. We wish her all the best for her future.</p>
+        <p class="sign">Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+      </div>
+    </article>
+
+    <!-- Q6.11 -->
+    <article class="card" id="q6-11">
+      <div class="card-head"><span class="qnum">Q6.11</span><span class="qtype">Message of Congratulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your science teacher has received the 'Best Teacher Award' from the municipality. Write a message of congratulations on behalf of the students in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> Mr/Ms (name) — Best Teacher Award — municipality — dedication and inspiring teaching — proud students — wishes for good health and more success</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">CONGRATULATIONS!</p>
+        <p>All the students of Grade 9 would like to congratulate our science teacher Mr Hari Prasad Sharma for receiving the Best Teacher Award from the municipality. We are very proud of you, sir. You are a dedicated and inspiring teacher. You always help us to learn with interest. We wish you good health and more success in the future.</p>
+        <p class="sign">Students of Grade 9<br>Shree Janajagriti Secondary School</p>
+      </div>
+    </article>
+
+    <!-- Q6.12 -->
+    <article class="card" id="q6-12">
+      <div class="card-head"><span class="qnum">Q6.12</span><span class="qtype">Message of Congratulations</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school football team has won the Inter-School Football Championship. Write a message of congratulations in about 100 words on behalf of the school management committee.</p>
+        <p class="clues"><b>Clues:</b> school football team — Inter-School Football Championship — teamwork, discipline and practice — coach and captain — pride of the school — congratulations and best wishes</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p class="center strong">CONGRATULATIONS!</p>
+        <p>The School Management Committee is very happy to congratulate our school football team for winning the Inter-School Football Championship. This victory is the result of your teamwork, discipline and hard practice. We thank the coach and the captain for their good work. You have made our school proud. We wish you all the best for the coming matches.</p>
+        <p class="sign">School Management Committee<br>Shree Janajagriti Secondary School</p>
+      </div>
+    </article>
+
+    <!-- Q6.13 -->
+    <article class="card" id="q6-13">
+      <div class="card-head"><span class="qnum">Q6.13</span><span class="qtype">Invitation Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a letter to your friend inviting him/her to your birthday party in about 100 words. Use the clues given below.</p>
+        <p class="clues"><b>Clues:</b> your address and date — Dear (friend) — birthday on Saturday, 5 pm — venue: your home — games, dinner, music — please come early — reply soon</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Baneshwor, Kathmandu<br>19 November 2026</p>
+        <p>Dear Ramesh,</p>
+        <p>I hope you are fine. I am also fine here.</p>
+        <p>I am writing to invite you to my birthday party. It will be held on Saturday at 5 pm at my home. We will play games, listen to music and have dinner together. My family and other friends will also come.</p>
+        <p>Please come early so that we can enjoy more. I am waiting for you. Please reply soon.</p>
+        <p class="sign">Your friend,<br>Sujan</p>
+      </div>
+    </article>
+
+    <!-- Q6.14 -->
+    <article class="card" id="q6-14">
+      <div class="card-head"><span class="qnum">Q6.14</span><span class="qtype">Invitation Letter (Formal)</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Your school is organising its Annual Day. Write a formal letter inviting a local social worker as the chief guest in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> name and address of school — date — Annual Day on 20 December 2026 — 11 am, school ground — cultural programmes and prize distribution — request to be the chief guest — kindly confirm</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>Mr Dil Bahadur Gurung<br>Social Worker<br>Damauli, Tanahun</p>
+        <p><b>Subject: Invitation to be the chief guest</b></p>
+        <p>Respected Sir,</p>
+        <p>Our school is going to celebrate its Annual Day on 20 December 2026 at 11 am in the school ground. There will be cultural programmes and a prize distribution. We would be very happy if you could be the chief guest of the programme. We hope that you will accept our request. Please let us know if you can come.</p>
+        <p class="sign">Yours faithfully,<br>Head Teacher</p>
+      </div>
+    </article>
+
+    <!-- Q6.15 -->
+    <article class="card" id="q6-15">
+      <div class="card-head"><span class="qnum">Q6.15</span><span class="qtype">Invitation Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a letter to your friend living in another city inviting him/her to spend the Tihar holidays with your family in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> address and date — greetings — Tihar approaching — stay for a week — lights, deusi-bhailo, sel roti, visit to temple — family excited — inform arrival date</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Pokhara<br>19 November 2026</p>
+        <p>Dear Anita,</p>
+        <p>How are you? I hope you are well. I am fine here.</p>
+        <p>Tihar is coming soon. I would like to invite you to spend the Tihar holidays with my family. You can stay for one week. We will light lamps, play deusi-bhailo and eat sel roti. We will also visit the temple. My family is very excited to meet you.</p>
+        <p>Please tell me the date of your arrival. Give my regards to your parents.</p>
+        <p class="sign">Yours lovingly,<br>Sarita</p>
+      </div>
+    </article>
+
+    <!-- Q6.16 -->
+    <article class="card" id="q6-16">
+      <div class="card-head"><span class="qnum">Q6.16</span><span class="qtype">Thank You Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>You received a nice birthday gift from your uncle. Write a thank you letter to him in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> address and date — Dear Uncle — thank for the gift (a watch/a book) — how useful — how you celebrated — regards to aunt — your love</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Chitwan<br>19 November 2026</p>
+        <p>Dear Uncle,</p>
+        <p>Namaste! I hope you are fine.</p>
+        <p>Thank you very much for the lovely watch that you sent me on my birthday. It is really nice and I like it very much. I wear it every day and it is very useful for me. I celebrated my birthday with my family and friends. They also liked your gift.</p>
+        <p>Please give my regards to aunt. Thank you once again.</p>
+        <p class="sign">Your loving nephew,<br>Kamal</p>
+      </div>
+    </article>
+
+    <!-- Q6.17 -->
+    <article class="card" id="q6-17">
+      <div class="card-head"><span class="qnum">Q6.17</span><span class="qtype">Thank You Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>You stayed at your friend's house during the vacation. Write a thank you letter to your friend's parents in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> address and date — Dear Uncle and Aunt — warm hospitality — delicious food — trip to the lake — enjoyed a lot — invite them to your home</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Dharan<br>19 November 2026</p>
+        <p>Dear Uncle and Aunt,</p>
+        <p>Namaste! I hope you are both well.</p>
+        <p>I want to thank you for your warm hospitality during my stay at your house. The food was very delicious. I also enjoyed the trip to the lake very much. I felt like I was at my own home. It was one of the best holidays of my life.</p>
+        <p>I would like to invite you to my house. Please come when you are free.</p>
+        <p class="sign">Yours sincerely,<br>Prabin</p>
+      </div>
+    </article>
+
+    <!-- Q6.18 -->
+    <article class="card" id="q6-18">
+      <div class="card-head"><span class="qnum">Q6.18</span><span class="qtype">Thank You Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>A doctor visited your school and gave a talk on health and hygiene. Write a thank you letter to the doctor on behalf of your school in about 100 words.</p>
+        <p class="clues"><b>Clues:</b> name and address of school — date — respected Doctor — valuable time and speech — students learnt personal hygiene — will follow tips — request to visit again</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>Dr Sushma Karki<br>Damauli Hospital<br>Tanahun</p>
+        <p><b>Subject: Thank you</b></p>
+        <p>Respected Madam,</p>
+        <p>On behalf of the students and teachers of our school, I would like to thank you for your talk on health and hygiene. We are very thankful to you for giving your valuable time to us. The students learnt many things about personal hygiene. We will follow your tips. We request you to visit our school again.</p>
+        <p class="sign">Yours faithfully,<br>Head Teacher</p>
+      </div>
+    </article>
+
+    <!-- Q6.19 -->
+    <article class="card" id="q6-19">
+      <div class="card-head"><span class="qnum">Q6.19</span><span class="qtype">Biography</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short biography of Mahabir Pun in about 100 words using the outline given below.</p>
+        <p class="clues"><b>Clues:</b> Born: 1955, Nangi village, Myagdi — Career: teacher, social entrepreneur — Works: Nepal Wireless Networking Project, internet in remote villages — Award: Ramon Magsaysay Award 2007 — President of E-Network Research and Development (ENRD) — inspiring figure</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Mahabir Pun</h4>
+        <p>Mahabir Pun was born in 1955 in Nangi village of Myagdi district. He worked as a teacher in his village. He is a social entrepreneur. He started the Nepal Wireless Networking Project. Through this project, he took the internet to many remote villages of Nepal. It helped the villagers to learn and do business. He is the president of E-Network Research and Development (ENRD). He received the Ramon Magsaysay Award in 2007 for his work. He is an inspiring person for all Nepali people.</p>
+      </div>
+    </article>
+
+    <!-- Q6.20 -->
+    <article class="card" id="q6-20">
+      <div class="card-head"><span class="qnum">Q6.20</span><span class="qtype">Biography</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short biography of Adikavi Bhanubhakta Acharya in about 100 words using the outline given below.</p>
+        <p class="clues"><b>Clues:</b> Born: 1814, Chundi Ramghat, Tanahun — Education: studied at home, learnt Sanskrit — Career: poet — Works: translated the Ramayana into Nepali, Bhaktamala, Vadhushikshya — Honour: Adikavi (the first poet) of Nepali — Death: 1868</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Bhanubhakta Acharya</h4>
+        <p>Bhanubhakta Acharya was born in 1814 in Chundi Ramghat of Tanahun district. He studied Sanskrit at home with his grandfather. He became a great poet. His most famous work is the translation of the Ramayana into the Nepali language. He also wrote Bhaktamala and Vadhushikshya. Because of his great work, he is called the Adikavi, which means the first poet of Nepali. He died in 1868. We remember him with great respect even today.</p>
+      </div>
+    </article>
+
+  </div><!-- /cards Q6 -->
+
+
+  <!-- ============================================================
+       QUESTION 7
+  ============================================================ -->
+  <h2 class="section-title s7" id="sec-q7">Question 7: Free Writing I
+    <small>6 marks · about 150 words · Keep the correct format and organise your ideas clearly.</small>
+  </h2>
+
+  <div class="cards">
+
+    <!-- Q7.1 -->
+    <article class="card" id="q7-1">
+      <div class="card-head"><span class="qnum">Q7.1</span><span class="qtype">Paragraph — Views</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Social media is very popular among teenagers. Write a paragraph in about 150 words expressing your views on its advantages and disadvantages.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Social Media: Advantages and Disadvantages</h4>
+        <p>Social media is very popular among teenagers today. It has both advantages and disadvantages. The main advantage is that we can talk to our friends and family easily, even if they live far away. We can also learn many new things from videos and posts. Some students use it to share notes and join online groups. But it also has some bad effects. Many students waste a lot of time on it. They do not give enough time to their studies. Some people also spread false news and bad comments. Too much use can also harm our eyes and sleep. In my opinion, we should use social media only for a short time and for good work. We should always use it carefully and wisely.</p>
+      </div>
+    </article>
+
+    <!-- Q7.2 -->
+    <article class="card" id="q7-2">
+      <div class="card-head"><span class="qnum">Q7.2</span><span class="qtype">Paragraph</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a paragraph in about 150 words on <b>'The Importance of Sports and Games in Students' Life'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>The Importance of Sports and Games in Students' Life</h4>
+        <p>Sports and games are very important in the life of students. First, they keep our body healthy and strong. When we play, we do exercise and stay fit. Second, they make our mind fresh. After playing, we can study better. Third, sports teach us teamwork. When we play football or volleyball, we learn to work together. They also teach us discipline and how to accept both winning and losing. Sports can also give us a good career. Many players like Sagar Thapa and Anjan Bista have made our country proud. In my school, we play games in the free period and I enjoy it very much. So, students should give time to sports along with their studies. As the saying goes, a healthy mind lives in a healthy body.</p>
+      </div>
+    </article>
+
+    <!-- Q7.3 -->
+    <article class="card" id="q7-3">
+      <div class="card-head"><span class="qnum">Q7.3</span><span class="qtype">Paragraph</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a paragraph in about 150 words on <b>'Why Punctuality Is Important'</b>. Support your views with examples.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Why Punctuality Is Important</h4>
+        <p>Punctuality means doing the work at the right time. It is a very good habit. It is important for everyone, especially for students. If we reach school on time, we do not miss any lesson. If we submit our homework on time, our teachers are happy with us. Punctual people are also trusted by others. For example, a doctor who reaches the hospital late can put a patient's life in danger. A student who reaches the exam hall late can lose marks. Time is very valuable and it never comes back. We should make a daily routine and follow it. We should also keep our watch five minutes fast. In conclusion, punctuality makes us successful and respected in life.</p>
+      </div>
+    </article>
+
+    <!-- Q7.4 -->
+    <article class="card" id="q7-4">
+      <div class="card-head"><span class="qnum">Q7.4</span><span class="qtype">Paragraph — Opinion</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Many schools have started online classes. Write a paragraph in about 150 words presenting your opinion about the advantages and disadvantages of online learning.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Online Learning: Advantages and Disadvantages</h4>
+        <p>Many schools have started online classes. In my opinion, online learning has both good and bad sides. The main advantage is that we can study at home. We do not need to travel, so we save time and money. During the pandemic, it helped students to continue their study. We can also watch the recorded lessons again if we do not understand. But there are some problems too. Many students in villages do not have internet or a smartphone. Sometimes the network is very slow. Also, we cannot ask questions easily and we do not meet our friends. Looking at the screen for a long time also hurts our eyes. So, I think online classes are good but they cannot replace the classroom teaching.</p>
+      </div>
+    </article>
+
+    <!-- Q7.5 -->
+    <article class="card" id="q7-5">
+      <div class="card-head"><span class="qnum">Q7.5</span><span class="qtype">Paragraph — Experience</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a paragraph in about 150 words describing your most memorable experience of celebrating a festival (Dashain, Tihar, Holi, Eid, Christmas, etc.). Mention your feelings.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>My Most Memorable Festival</h4>
+        <p>My most memorable festival is Dashain. Last year, I celebrated Dashain with my whole family in our village. On the day of Tika, we woke up early and took a bath. Then we wore new clothes and went to my grandfather's house. He put tika and jamara on my forehead and gave me blessings and some money. My cousins and relatives had also come. We ate delicious food like sel roti and mutton. In the evening, we flew a big swing called ping and played cards. I felt very happy and excited. I was also proud of our culture. I wish I could celebrate every festival with my family like that. It is a time of love, joy and togetherness.</p>
+      </div>
+    </article>
+
+    <!-- Q7.6 -->
+    <article class="card" id="q7-6">
+      <div class="card-head"><span class="qnum">Q7.6</span><span class="qtype">Paragraph — Experience</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a paragraph in about 150 words about <b>'A Day I Will Never Forget'</b>. Express your feelings clearly.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>A Day I Will Never Forget</h4>
+        <p>The day I will never forget is the day I won the first prize in the speech competition. It was last year in our school. I was very nervous in the morning. My hands were cold and I could not eat my breakfast. My teacher encouraged me and told me to believe in myself. When my name was called, my heart was beating very fast. But I took a deep breath and started to speak. After some time, I forgot my fear. When I finished, everyone clapped loudly. I was very happy. At the end, the principal announced my name as the winner. I felt very proud and tears of joy came to my eyes. I will never forget that day in my life.</p>
+      </div>
+    </article>
+
+    <!-- Q7.7 -->
+    <article class="card" id="q7-7">
+      <div class="card-head"><span class="qnum">Q7.7</span><span class="qtype">Paragraph — Opinion</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Should students be allowed to bring mobile phones to school? Write a paragraph in about 150 words giving your opinion.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Should Students Bring Mobile Phones to School?</h4>
+        <p>Should students be allowed to bring mobile phones to school? In my opinion, they should not. Firstly, a phone can disturb the class. Students may play games or watch videos instead of listening to the teacher. Secondly, they can use it for cheating in exams. Thirdly, some students may feel bad if they do not have a phone like others. It can also be lost or stolen in school. However, a phone is useful in some cases. For example, a student can call his parents in an emergency. But the school has a phone, so students can use it when needed. Therefore, I think students should keep their phones at home. We can use them after school for study and for talking to friends.</p>
+      </div>
+    </article>
+
+    <!-- Q7.8 -->
+    <article class="card" id="q7-8">
+      <div class="card-head"><span class="qnum">Q7.8</span><span class="qtype">Paragraph</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Junk food is increasingly popular among children. Write a paragraph in about 150 words about its effects on their health and studies.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Effects of Junk Food on Children</h4>
+        <p>Junk food is very popular among children today. Noodles, chips, burgers and cold drinks are some examples. They taste good but they are not healthy. They have a lot of oil, sugar and salt but no good nutrients. If children eat them every day, they can become fat. They may also get heart problems, high blood pressure and tooth problems in the future. Junk food also makes children lazy and weak. They may not feel like eating proper meals like dal, bhat and vegetables. As a result, they cannot concentrate on their studies. Also, it is expensive and so it is a burden for the family. So, we should avoid junk food. We should eat fresh and home-made food, fruits and vegetables. It will keep us healthy and active.</p>
+      </div>
+    </article>
+
+    <!-- Q7.9 -->
+    <article class="card" id="q7-9">
+      <div class="card-head"><span class="qnum">Q7.9</span><span class="qtype">Leave Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Suppose you are Anup/Anupa Karki, a student of Grade 9 at Shree Janajagriti Secondary School. Write an application to your class teacher requesting three days' sick leave in about 150 words.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>The Class Teacher<br>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p><b>Subject: Request for sick leave</b></p>
+        <p>Respected Sir/Madam,</p>
+        <p>I would like to inform you that I am suffering from a high fever and a bad cold since last night. The doctor has examined me and advised me to take complete rest for three days. So, I cannot come to school from 19 November to 21 November 2026.</p>
+        <p>Therefore, I request you to kindly grant me three days' sick leave. I will complete all the missed lessons and homework after I recover. I shall be very thankful to you for your kind help.</p>
+        <p class="sign">Yours obediently,<br>Anup Karki<br>Grade 9, Roll no. 12</p>
+      </div>
+    </article>
+
+    <!-- Q7.10 -->
+    <article class="card" id="q7-10">
+      <div class="card-head"><span class="qnum">Q7.10</span><span class="qtype">Leave Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Suppose you are Ramesh/Rama Gurung, a student of Grade 9. Write an application to the head teacher requesting five days' leave to attend your sister's wedding in about 150 words.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>The Head Teacher<br>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p><b>Subject: Request for five days' leave</b></p>
+        <p>Respected Sir/Madam,</p>
+        <p>I would like to say that my elder sister's wedding is going to be held on 25 November 2026. There are many things to do at home and my family needs my help. So, I cannot attend the school from 23 November to 27 November 2026.</p>
+        <p>Therefore, I request you to kindly grant me five days' leave. I promise to finish the missed work after returning to school. I shall be very grateful to you for this kindness.</p>
+        <p class="sign">Yours obediently,<br>Ramesh Gurung<br>Grade 9, Roll no. 8</p>
+      </div>
+    </article>
+
+    <!-- Q7.11 -->
+    <article class="card" id="q7-11">
+      <div class="card-head"><span class="qnum">Q7.11</span><span class="qtype">Leave Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Suppose you are Suman/Sumana Thapa, a student of Grade 9. Write an application to your head teacher requesting a day's leave to attend a family funeral in about 150 words.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>The Head Teacher<br>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p><b>Subject: Request for a day's leave</b></p>
+        <p>Respected Sir/Madam,</p>
+        <p>With due respect, I want to inform you that my grandfather passed away this morning. His funeral will be held tomorrow in our village. As my whole family is going to attend it, I also have to go with them. So, I cannot come to school tomorrow on 20 November 2026.</p>
+        <p>Therefore, I request you to kindly grant me one day's leave. I will complete the lessons that I miss. I shall be very thankful to you.</p>
+        <p class="sign">Yours obediently,<br>Suman Thapa<br>Grade 9, Roll no. 15</p>
+      </div>
+    </article>
+
+    <!-- Q7.12 -->
+    <article class="card" id="q7-12">
+      <div class="card-head"><span class="qnum">Q7.12</span><span class="qtype">Leave Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Suppose you are Binod/Binita Adhikari, a teacher at ABC Secondary School. Write an application to the principal requesting four days' leave to attend a teacher training programme in about 150 words.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>ABC Secondary School<br>Pokhara<br>19 November 2026</p>
+        <p>The Principal<br>ABC Secondary School<br>Pokhara</p>
+        <p><b>Subject: Request for four days' leave</b></p>
+        <p>Respected Sir,</p>
+        <p>I would like to request you to grant me four days' leave. I have been selected for a teacher training programme on English teaching. It will be held in Kathmandu from 23 November to 26 November 2026. I think the training will help me to teach my students better.</p>
+        <p>So, I request you to kindly grant me leave for these days. I will arrange the classes with other teachers before leaving. I shall be very thankful to you.</p>
+        <p class="sign">Yours faithfully,<br>Binod Adhikari<br>English Teacher</p>
+      </div>
+    </article>
+
+    <!-- Q7.13 -->
+    <article class="card" id="q7-13">
+      <div class="card-head"><span class="qnum">Q7.13</span><span class="qtype">Job Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Read the following vacancy announcement and write a job application with a CV summary in about 150 words.</p>
+        <p class="clues"><b>VACANCY:</b> Office Assistant required at Himalayan Bank Ltd., Bhairahawa Branch. Qualification: SEE passed (+2 preferred); computer knowledge; good communication skills. Apply within 10 days to the Branch Manager.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Bhairahawa<br>19 November 2026</p>
+        <p>The Branch Manager<br>Himalayan Bank Ltd.<br>Bhairahawa Branch</p>
+        <p><b>Subject: Application for the post of Office Assistant</b></p>
+        <p>Dear Sir,</p>
+        <p>I have read your vacancy announcement for the post of Office Assistant in the newspaper. I would like to apply for this post.</p>
+        <p>I have passed SEE and I am studying in +2 now. I can use a computer well, especially Word and Excel. I can also speak Nepali and English clearly. I am honest, hard-working and polite.</p>
+        <p>I have attached my CV and copies of my certificates. If you give me a chance, I promise to do my work with full responsibility. I hope you will consider my application.</p>
+        <p class="sign">Yours faithfully,<br>Santosh Thapa<br>Phone: 9800000000</p>
+        <p><b>CV summary:</b> Name: Santosh Thapa | SEE: 2080 BS, First Division | +2: studying | Skills: computer, communication</p>
+      </div>
+    </article>
+
+    <!-- Q7.14 -->
+    <article class="card" id="q7-14">
+      <div class="card-head"><span class="qnum">Q7.14</span><span class="qtype">Job Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>A hotel in Pokhara needs a receptionist. Suppose you are Roshan/Rojina Gurung. Write a job application to the Manager in about 150 words.</p>
+        <p class="clues"><b>Clues:</b> Qualification: +2 passed — fluent English and Nepali — friendly manner — basic computer skills — shift duty</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Pokhara<br>19 November 2026</p>
+        <p>The Manager<br>Hotel Lakeview<br>Lakeside, Pokhara</p>
+        <p><b>Subject: Application for the post of Receptionist</b></p>
+        <p>Dear Sir,</p>
+        <p>I have come to know that your hotel needs a receptionist. I would like to apply for this post.</p>
+        <p>I have passed +2. I can speak English and Nepali fluently. I know basic computer skills. I am friendly and polite with people. I am also ready to work in shifts. I think I can welcome the guests warmly and help them well.</p>
+        <p>I have attached my CV and certificates with this application. I request you to give me a chance. I will try my best to do my job well.</p>
+        <p class="sign">Yours faithfully,<br>Rojina Gurung<br>Phone: 9811111111</p>
+      </div>
+    </article>
+
+    <!-- Q7.15 -->
+    <article class="card" id="q7-15">
+      <div class="card-head"><span class="qnum">Q7.15</span><span class="qtype">Job Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>A trekking agency in Kathmandu has advertised for a trekking guide. Suppose you are Dawa/Dolma Sherpa. Write a job application in about 150 words.</p>
+        <p class="clues"><b>Clues:</b> Experience of leading treks — first-aid training — English and one more foreign language — knowledge of the Annapurna region</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Kathmandu<br>19 November 2026</p>
+        <p>The Manager<br>Everest Trekking Agency<br>Thamel, Kathmandu</p>
+        <p><b>Subject: Application for the post of Trekking Guide</b></p>
+        <p>Dear Sir/Madam,</p>
+        <p>I saw your advertisement for a trekking guide. I would like to apply for this post.</p>
+        <p>I have led several treks, including the Annapurna Base Camp Trek. I know the Annapurna region very well. I have taken first-aid training. I can speak English and a little Hindi. I like to meet new people and I love the mountains. I can also take care of tourists in the hills.</p>
+        <p>I have attached my CV and certificates. I hope you will give me an opportunity to work with you.</p>
+        <p class="sign">Yours faithfully,<br>Dawa Sherpa<br>Phone: 9822222222</p>
+      </div>
+    </article>
+
+    <!-- Q7.16 -->
+    <article class="card" id="q7-16">
+      <div class="card-head"><span class="qnum">Q7.16</span><span class="qtype">Job Application</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>A bookshop in your town needs a sales assistant. Suppose you are Sagar/Sagarika Neupane. Write an application to the proprietor in about 150 words.</p>
+        <p class="clues"><b>Clues:</b> SEE passed — honest and hard-working — good at maths — willing to work part-time — can start immediately</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p>Damauli, Tanahun<br>19 November 2026</p>
+        <p>The Proprietor<br>Gyan Book Shop<br>Damauli, Tanahun</p>
+        <p><b>Subject: Application for the post of Sales Assistant</b></p>
+        <p>Dear Sir,</p>
+        <p>I have heard that you need a sales assistant in your bookshop. I would like to apply for this post.</p>
+        <p>I have passed SEE. I am good at maths, so I can count money and make bills easily. I am honest and hard-working. I love books and I can help the customers to find the books they want. I am ready to work part-time. I can start my work immediately.</p>
+        <p>I have attached my CV with this application. I hope you will give me a chance. I will not let you down.</p>
+        <p class="sign">Yours faithfully,<br>Sagar Neupane<br>Phone: 9833333333</p>
+      </div>
+    </article>
+
+    <!-- Q7.17 -->
+    <article class="card" id="q7-17">
+      <div class="card-head"><span class="qnum">Q7.17</span><span class="qtype">Dialogue</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a dialogue between a customer and a shopkeeper about buying a mobile phone in about 150 words. Include greetings, asking about price, features and bargaining.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Customer and Shopkeeper</h4>
+        <p><b>Shopkeeper:</b> Good morning, sir. How can I help you?</p>
+        <p><b>Customer:</b> Good morning. I want to buy a mobile phone.</p>
+        <p><b>Shopkeeper:</b> Sure. What type of phone do you want?</p>
+        <p><b>Customer:</b> I want a smartphone with a good camera.</p>
+        <p><b>Shopkeeper:</b> This one is very good. It has a 50 MP camera and a big screen.</p>
+        <p><b>Customer:</b> It looks nice. How much is it?</p>
+        <p><b>Shopkeeper:</b> It is Rs 25,000.</p>
+        <p><b>Customer:</b> Oh, that is too much. Could you give me a discount?</p>
+        <p><b>Shopkeeper:</b> I can give you a 10% discount. It will be Rs 22,500.</p>
+        <p><b>Customer:</b> Is there any warranty?</p>
+        <p><b>Shopkeeper:</b> Yes, there is one-year warranty.</p>
+        <p><b>Customer:</b> Okay. I will take it.</p>
+        <p><b>Shopkeeper:</b> Thank you, sir.</p>
+      </div>
+    </article>
+
+    <!-- Q7.18 -->
+    <article class="card" id="q7-18">
+      <div class="card-head"><span class="qnum">Q7.18</span><span class="qtype">Dialogue</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a dialogue between two friends planning a holiday trip in about 150 words. Use expressions for making plans and intentions (I'm thinking of..., I intend to..., We are going to...).</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Two Friends</h4>
+        <p><b>Sita:</b> Hi, Rita. The holidays are coming soon. What are your plans?</p>
+        <p><b>Rita:</b> I am thinking of going on a trip. What about you?</p>
+        <p><b>Sita:</b> I intend to visit Pokhara with my family. We are going to stay there for three days.</p>
+        <p><b>Rita:</b> That sounds great. What are you going to do there?</p>
+        <p><b>Sita:</b> We are going to go boating on Phewa Lake and visit the caves.</p>
+        <p><b>Rita:</b> Wow! I want to come too. Do you think your parents will allow me?</p>
+        <p><b>Sita:</b> I will ask them tonight. I think they will say yes.</p>
+        <p><b>Rita:</b> Thank you. I will ask my mother too.</p>
+        <p><b>Sita:</b> Good. I will call you tomorrow.</p>
+        <p><b>Rita:</b> Okay. Bye.</p>
+      </div>
+    </article>
+
+    <!-- Q7.19 -->
+    <article class="card" id="q7-19">
+      <div class="card-head"><span class="qnum">Q7.19</span><span class="qtype">Dialogue</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a dialogue between a doctor and a patient in a telehealth (video call) consultation in about 150 words. Include symptoms, advice and warnings.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Doctor and Patient (Video Call)</h4>
+        <p><b>Doctor:</b> Hello, I am Dr Sharma. How can I help you?</p>
+        <p><b>Patient:</b> Hello, doctor. I have a bad cough and a fever for three days.</p>
+        <p><b>Doctor:</b> Do you have any other problem, like a headache?</p>
+        <p><b>Patient:</b> Yes, I also have a mild headache and a sore throat.</p>
+        <p><b>Doctor:</b> I see. You should take rest and drink a lot of warm water.</p>
+        <p><b>Patient:</b> Should I take any medicine?</p>
+        <p><b>Doctor:</b> Yes, I will give you a prescription. Take the medicine after meals.</p>
+        <p><b>Patient:</b> Thank you, doctor. Is there anything I should not do?</p>
+        <p><b>Doctor:</b> You had better not drink cold drinks. If the fever does not go down in two days, you must visit the hospital.</p>
+        <p><b>Patient:</b> I will do that. Thank you.</p>
+      </div>
+    </article>
+
+    <!-- Q7.20 -->
+    <article class="card" id="q7-20">
+      <div class="card-head"><span class="qnum">Q7.20</span><span class="qtype">Dialogue</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a dialogue between a student and a teacher where the student asks for help because of low marks in English in about 150 words. Include requests and suggestions.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Student and Teacher</h4>
+        <p><b>Student:</b> Excuse me, sir. May I talk to you for a moment?</p>
+        <p><b>Teacher:</b> Yes, of course. What is the matter?</p>
+        <p><b>Student:</b> I got low marks in English in the last exam. I am very worried.</p>
+        <p><b>Teacher:</b> Don't worry. Where do you find difficulty?</p>
+        <p><b>Student:</b> I find grammar and writing very hard.</p>
+        <p><b>Teacher:</b> I see. You should practise grammar exercises every day.</p>
+        <p><b>Student:</b> Could you please give me some extra exercises?</p>
+        <p><b>Teacher:</b> Sure. You ought to read English stories too. It will improve your writing.</p>
+        <p><b>Student:</b> Thank you very much, sir. I will try my best.</p>
+        <p><b>Teacher:</b> You are welcome. Come to me if you have any problem.</p>
+      </div>
+    </article>
+
+  </div><!-- /cards Q7 -->
+
+
+  <!-- ============================================================
+       QUESTION 8
+  ============================================================ -->
+  <h2 class="section-title s8" id="sec-q8">Question 8: Free Writing II
+    <small>8 marks · about 200 words · Write in the correct format with clear paragraphs.</small>
+  </h2>
+
+  <div class="cards">
+
+    <!-- Q8.1 -->
+    <article class="card" id="q8-1">
+      <div class="card-head"><span class="qnum">Q8.1</span><span class="qtype">Personal Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a personal letter to your friend describing a memorable trip you made. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>A Memorable Trip</h4>
+        <p>Damauli, Tanahun<br>19 November 2026</p>
+        <p>Dear Binod,</p>
+        <p>How are you? I hope you and your family are fine. I am also fine here. I am writing this letter to tell you about my recent trip to Pokhara.</p>
+        <p>Last month, I went to Pokhara with my parents and my younger sister. We went there by bus. It took about three hours. The journey was very nice because we saw green hills and rivers on the way.</p>
+        <p>In Pokhara, we stayed in a small hotel near Phewa Lake. On the first day, we went boating on the lake. The water was calm and the view of the Machhapuchhre mountain was wonderful. On the second day, we visited Davis Falls, Gupteshwor Cave and the Peace Stupa. We also ate delicious momo and fish. In the evening, we walked along the lakeside and bought some gifts.</p>
+        <p>I enjoyed the trip a lot. I felt very happy and fresh. I wish you had come with us. Next time, we will go together.</p>
+        <p>Please give my regards to your parents. Write to me soon.</p>
+        <p class="sign">Your loving friend,<br>Suraj</p>
+      </div>
+    </article>
+
+    <!-- Q8.2 -->
+    <article class="card" id="q8-2">
+      <div class="card-head"><span class="qnum">Q8.2</span><span class="qtype">Personal Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a personal letter to your younger brother giving him advice on how to study well and use his time properly. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Advice to My Younger Brother</h4>
+        <p>Kathmandu<br>19 November 2026</p>
+        <p>Dear Rohan,</p>
+        <p>How are you? I hope you are doing well. I am fine here. Mother told me on the phone that you are not serious about your studies. So, I am writing this letter to give you some advice.</p>
+        <p>You know that this is a very important year for you. You should study every day for at least three hours. You ought to make a time table and follow it. You had better not watch TV or play games for a long time. Mobile phones also waste a lot of time, so you should use them only when needed.</p>
+        <p>You should also ask your teachers when you do not understand something. You should not feel shy. Please do your homework on time and revise your lessons regularly. Also, you should sleep early and wake up early. Eat healthy food and play some games for your health.</p>
+        <p>Remember, hard work is the key to success. If you work hard now, you will have a bright future. I believe you can do it.</p>
+        <p>Please obey our parents and teachers. Write to me soon.</p>
+        <p class="sign">Your loving brother,<br>Rajesh</p>
+      </div>
+    </article>
+
+    <!-- Q8.3 -->
+    <article class="card" id="q8-3">
+      <div class="card-head"><span class="qnum">Q8.3</span><span class="qtype">Official Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write an official letter to your head teacher requesting permission to organise an educational tour for your class. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Request for Permission to Organise an Educational Tour</h4>
+        <p>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>The Head Teacher<br>Shree Janajagriti Secondary School<br>Bhanu-10, Tanahun</p>
+        <p><b>Subject: Request for permission to organise an educational tour</b></p>
+        <p>Respected Sir/Madam,</p>
+        <p>On behalf of all the students of Grade 9, I would like to request you to allow us to go on an educational tour to Lumbini.</p>
+        <p>Lumbini is the birthplace of Lord Buddha. It is a very important historical and religious place. We have read about it in our social studies book. If we visit it, we can learn more about our history and culture. It will also give us fun and refresh our minds after the long study.</p>
+        <p>We want to go there on 10 December 2026 for two days. About 40 students will go with two teachers. We will travel by a school bus. We will pay the cost of food and the bus ourselves. We promise to follow all the rules of the school and to be disciplined.</p>
+        <p>Therefore, we request you to kindly give us permission for the tour and arrange the bus. We shall be very thankful to you.</p>
+        <p class="sign">Yours obediently,<br>Anita Sharma<br>Class Captain, Grade 9</p>
+      </div>
+    </article>
+
+    <!-- Q8.4 -->
+    <article class="card" id="q8-4">
+      <div class="card-head"><span class="qnum">Q8.4</span><span class="qtype">Official Letter</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write an official letter to the Ward Chairperson of your municipality drawing his attention to the damaged road in your locality and requesting him to repair it. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Request to Repair the Damaged Road</h4>
+        <p>Bhanu-10, Tanahun<br>19 November 2026</p>
+        <p>The Ward Chairperson<br>Bhanu Municipality, Ward No. 10<br>Tanahun</p>
+        <p><b>Subject: Request to repair the damaged road</b></p>
+        <p>Respected Sir/Madam,</p>
+        <p>I would like to draw your kind attention to the poor condition of the road in our locality. I am a student of Grade 9 and I live in this area.</p>
+        <p>The road from our school to the bazaar is badly damaged. There are many big holes on it. In the rainy season, they fill up with water and mud. It becomes very difficult for students, old people and vehicles to pass. Some people have fallen down and got hurt. Many students also reach school late because of the bad road. In the dry season, the dust makes it hard to breathe.</p>
+        <p>Therefore, I request you to repair this road as soon as possible. It will help the whole community. I hope you will take quick action.</p>
+        <p>Thank you very much for your kind attention.</p>
+        <p class="sign">Yours faithfully,<br>Sunil Magar<br>Bhanu-10, Tanahun</p>
+      </div>
+    </article>
+
+    <!-- Q8.5 -->
+    <article class="card" id="q8-5">
+      <div class="card-head"><span class="qnum">Q8.5</span><span class="qtype">Letter to the Editor</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a letter to the editor of a national daily drawing the attention of the concerned authorities to the problem of plastic pollution in your city. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Plastic Pollution in Our City</h4>
+        <p>Pokhara<br>19 November 2026</p>
+        <p>The Editor<br>The Kathmandu Post<br>Kathmandu</p>
+        <p><b>Subject: Plastic pollution in our city</b></p>
+        <p>Dear Sir/Madam,</p>
+        <p>Through the column of your newspaper, I want to draw the attention of the concerned authorities to the problem of plastic pollution in our city.</p>
+        <p>These days, plastic bags and bottles are seen everywhere on the streets, in drains and in the rivers. People use plastic bags for shopping and throw them away after use. Plastic does not rot in the soil for many years. It blocks the drains and causes flooding. Animals like cows eat it and fall sick or die. It also makes our city dirty and ugly. It is bad for tourism too.</p>
+        <p>To solve this problem, the municipality should ban plastic bags. People should use cloth bags or paper bags. There should be dustbins in every street, and the plastic should be recycled. Schools and clubs should also teach people about it.</p>
+        <p>I hope the concerned authorities will take action soon.</p>
+        <p class="sign">Yours faithfully,<br>Sabina Gurung<br>Pokhara</p>
+      </div>
+    </article>
+
+    <!-- Q8.6 -->
+    <article class="card" id="q8-6">
+      <div class="card-head"><span class="qnum">Q8.6</span><span class="qtype">Letter to the Editor</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a letter to the editor of a newspaper about the growing problem of stray dogs in your town and suggest some solutions. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Menace of Stray Dogs in Our Town</h4>
+        <p>Butwal<br>19 November 2026</p>
+        <p>The Editor<br>The Rising Nepal<br>Dharmapath, Kathmandu</p>
+        <p><b>Subject: Menace of stray dogs in our town</b></p>
+        <p>Dear Sir/Madam,</p>
+        <p>I would like to draw the attention of the authorities to the growing problem of stray dogs in our town through your newspaper.</p>
+        <p>These days, there are many stray dogs on the roads, in the markets and near the schools. They bark at people at night and disturb our sleep. Some of them attack children and old people. Last week, a dog bit a small child near my house and he had to take injections. They also spread dirt by opening the garbage bags. Sometimes they cause road accidents.</p>
+        <p>I think the municipality should do something about it. It should catch the stray dogs and vaccinate them. There should also be a dog shelter. People should not throw food on the road because it attracts the dogs.</p>
+        <p>I hope this problem will be solved soon.</p>
+        <p class="sign">Yours faithfully,<br>Prakash Thapa<br>Butwal</p>
+      </div>
+    </article>
+
+    <!-- Q8.7 -->
+    <article class="card" id="q8-7">
+      <div class="card-head"><span class="qnum">Q8.7</span><span class="qtype">Letter to the Editor</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a letter to the editor of a daily newspaper about the poor condition of public transport in your area and request the authorities to improve it. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Poor Condition of Public Transport</h4>
+        <p>Dhangadhi<br>19 November 2026</p>
+        <p>The Editor<br>Gorkhapatra Daily<br>Kathmandu</p>
+        <p><b>Subject: Poor condition of public transport</b></p>
+        <p>Dear Sir/Madam,</p>
+        <p>Through your newspaper, I want to bring the poor condition of public transport in our area to the notice of the authorities.</p>
+        <p>The buses in our area are old and dirty. They do not come on time and sometimes do not come at all. The drivers drive very fast and carelessly. Also, the buses are always overcrowded, so students and old people have to stand for a long time. Sometimes the conductors take more fare than the fixed rate. Many students reach school late because of this. Women also feel unsafe in the crowded buses.</p>
+        <p>I request the transport office to take action. It should check the vehicles regularly and control the fare. More buses should be added during the morning and evening. The drivers should follow the traffic rules.</p>
+        <p>I hope the authorities will pay attention to this problem.</p>
+        <p class="sign">Yours faithfully,<br>Nisha Bohara<br>Dhangadhi</p>
+      </div>
+    </article>
+
+    <!-- Q8.8 -->
+    <article class="card" id="q8-8">
+      <div class="card-head"><span class="qnum">Q8.8</span><span class="qtype">Email</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write an email to your foreign friend describing one of the biggest festivals of Nepal. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p><b>To:</b> emily.brown@email.com<br><b>Subject:</b> Tihar festival in Nepal</p>
+        <p>Dear Emily,</p>
+        <p>How are you? I hope you are fine. I am writing to tell you about Tihar, one of the biggest festivals of Nepal.</p>
+        <p>Tihar is also called the festival of lights. It is celebrated for five days in October or November. On these days, we worship crows, dogs, cows and oxen. We also worship Goddess Laxmi. On the third day, we clean our houses and light oil lamps and candles. The whole town looks very beautiful at night. In the evening, girls and boys go from house to house to play Deusi and Bhailo. People give them money and food.</p>
+        <p>We also eat many tasty foods, like sel roti, fruits and sweets. On the last day, sisters put tika on their brothers' forehead and pray for their long life. This day is called Bhai Tika. Brothers give gifts to their sisters. People wear new clothes and meet relatives.</p>
+        <p>I like Tihar very much because it is full of light, joy and love. I hope you can come to Nepal and enjoy it one day.</p>
+        <p>Please write to me soon.</p>
+        <p class="sign">Your friend,<br>Pramila</p>
+      </div>
+    </article>
+
+    <!-- Q8.9 -->
+    <article class="card" id="q8-9">
+      <div class="card-head"><span class="qnum">Q8.9</span><span class="qtype">Email</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write an email to your cousin describing your school tour and your preparations for it. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p><b>To:</b> nabin.rai@email.com<br><b>Subject:</b> Our school tour next week</p>
+        <p>Dear Nabin,</p>
+        <p>How are you? I hope you and your family are well. I am fine. I want to share some exciting news with you. Our school is going on a tour next week.</p>
+        <p>We are going to Chitwan National Park. We will leave on Monday morning by bus. The tour will be for three days. We will stay in a lodge near the park. In the programme, we will go on a jungle safari, ride an elephant and visit the crocodile breeding centre. We will also watch a Tharu cultural dance in the evening. We hope to see rhinos, deer and many birds.</p>
+        <p>I have started my preparation. I have packed warm clothes, a raincoat, a hat, a torch and my camera. I also need to take some medicine and water bottles. My mother has told me to take care of myself.</p>
+        <p>I am very excited and I can't wait. I will send you photos after returning. I wish you could come too.</p>
+        <p>Write to me soon.</p>
+        <p class="sign">Your cousin,<br>Manish</p>
+      </div>
+    </article>
+
+    <!-- Q8.10 -->
+    <article class="card" id="q8-10">
+      <div class="card-head"><span class="qnum">Q8.10</span><span class="qtype">Email</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write an email to a hotel requesting a room booking for your family and asking about the price and facilities. (About 200 words)</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p><b>To:</b> info@hotelmountainview.com<br><b>Subject:</b> Request for room booking</p>
+        <p>Dear Sir/Madam,</p>
+        <p>I hope this email finds you well. I am writing to request a room booking at your hotel in Pokhara for my family.</p>
+        <p>We are four people, two adults and two children. We would like to stay for three nights from 10 December to 13 December 2026. We would like a family room with two beds and an attached bathroom. If possible, we want a room with a lake view or a mountain view on the upper floor. We also need breakfast included in the price.</p>
+        <p>Could you please tell me the price of the room per night and what facilities you have? Also, please let me know if a pick-up from the bus park is available. We will pay in advance if you ask.</p>
+        <p>Please reply to this email as soon as possible to confirm the booking. You can also call me on 9800000000.</p>
+        <p>Thank you very much for your help.</p>
+        <p class="sign">Yours faithfully,<br>Ramesh Adhikari</p>
+      </div>
+    </article>
+
+    <!-- Q8.11 -->
+    <article class="card" id="q8-11">
+      <div class="card-head"><span class="qnum">Q8.11</span><span class="qtype">Essay — Narrative</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short essay in about 200 words on <b>'An Unforgettable Journey/Trek'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>An Unforgettable Trek</h4>
+        <p>Last year, I went on a trek to Poon Hill with my school friends and two teachers. It was the most exciting journey of my life and I can never forget it.</p>
+        <p>We started our trek from Nayapul early in the morning. The path went through green forests, small villages and terraced fields. On the way, we crossed a suspension bridge over a river. It was a bit scary, but we enjoyed it very much. After some hours, we reached Ulleri. There were very many stone steps and I felt tired. My friends cheered me and we moved slowly.</p>
+        <p>We stayed overnight in Ghorepani. The next morning, we woke up at 4 o'clock and climbed to Poon Hill in the dark. It took us about one hour. When we reached the top, the sun began to rise. The snow-capped mountains looked golden. I saw Dhaulagiri and Annapurna very clearly. I was speechless.</p>
+        <p>On the way back, we sang songs and played games. Everyone was tired but happy.</p>
+        <p>From this trek, I learnt that we should never give up. It also taught me teamwork and love for nature. I want to do such a trek again.</p>
+      </div>
+    </article>
+
+    <!-- Q8.12 -->
+    <article class="card" id="q8-12">
+      <div class="card-head"><span class="qnum">Q8.12</span><span class="qtype">Essay — Argumentative</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short essay in about 200 words on <b>'Social Media Does More Harm than Good to Teenagers'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Social Media Does More Harm than Good to Teenagers</h4>
+        <p>Social media like Facebook, TikTok and Instagram are very popular among teenagers. I agree that they do more harm than good.</p>
+        <p>Firstly, they waste a lot of time. Many teenagers spend hours on social media every day. They do not give enough time to study, play and sleep. As a result, their results become poor.</p>
+        <p>Secondly, they are bad for health. Looking at the screen for a long time hurts our eyes. Teenagers also sit for long hours and do not exercise. Many of them can't sleep well at night.</p>
+        <p>Thirdly, they can harm our mind. Some teenagers compare their life with others and feel sad. Some also face cyberbullying. Bad comments and false news also spread quickly.</p>
+        <p>Fourthly, there is a danger of cheating. Strangers can make fake accounts and trap teenagers.</p>
+        <p>However, social media has some good sides. We can talk to friends and learn new things. But these benefits are small compared to the harm.</p>
+        <p>In conclusion, I think social media does more harm than good to teenagers. We should use it only for a short time and for useful work. Parents and teachers should also guide us.</p>
+      </div>
+    </article>
+
+    <!-- Q8.13 -->
+    <article class="card" id="q8-13">
+      <div class="card-head"><span class="qnum">Q8.13</span><span class="qtype">Essay — Descriptive</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short descriptive essay in about 200 words on <b>'A Busy Market Place'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>A Busy Market Place</h4>
+        <p>Every Saturday, I go to the local market with my mother. It is the busiest place in our town and I find it interesting.</p>
+        <p>As soon as we enter the market, we see a large crowd. People are walking in all directions. The shopkeepers shout loudly to call the customers. "Fresh vegetables! Cheap price!" they say. There are many shops on both sides of the road. Some sell colourful clothes and shoes. Others sell fruits, vegetables, spices and sweets. The vendors sit on the ground and arrange their goods in baskets.</p>
+        <p>The market is full of different sounds. We can hear the horns of motorbikes, the music from the shops and the bargaining between the customers and sellers. The smell is also different. The smell of fresh fruits, hot samosas and jilapi makes us hungry. But sometimes we also smell rotten vegetables near the garbage.</p>
+        <p>The market has all kinds of people, such as farmers, students, housewives and tourists. Everyone is busy in buying and selling.</p>
+        <p>By the evening, the market becomes less crowded. The sellers pack their goods and go home. I love the market because it shows the life of our people. It is full of colour, noise and energy.</p>
+      </div>
+    </article>
+
+    <!-- Q8.14 -->
+    <article class="card" id="q8-14">
+      <div class="card-head"><span class="qnum">Q8.14</span><span class="qtype">Essay — Argumentative</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a short essay in about 200 words on <b>'Science and Technology Is a Blessing, Not a Curse'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Science and Technology Is a Blessing, Not a Curse</h4>
+        <p>Science and technology have changed our world. I strongly believe that it is a blessing and not a curse.</p>
+        <p>First, it has made our life easy. Machines like washing machines, fans and cookers save our time and effort. Second, it has improved transport and communication. We can travel to far places quickly by plane or bus. We can talk to people in other countries by phone and internet within a second. Third, it has helped in health. Doctors can find diseases and cure them with the help of modern machines. Telehealth also helps the people in remote areas. Fourth, it has helped in education. We can learn many things on the internet.</p>
+        <p>Some people say that technology is a curse because it causes pollution and makes people lazy. Weapons can also kill many people. Children may waste time on mobile games. But these problems are because of the wrong use of technology, not because of technology itself.</p>
+        <p>In conclusion, science and technology is a great gift if we use it wisely. We should use it for good purposes and protect the environment.</p>
+      </div>
+    </article>
+
+    <!-- Q8.15 -->
+    <article class="card" id="q8-15">
+      <div class="card-head"><span class="qnum">Q8.15</span><span class="qtype">Diary Entry</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a diary entry in about 200 words about your school's Annual Sports Day and your feelings about it.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p><b>Thursday, 19 November 2026</b><br><b>8:30 pm</b></p>
+        <p>Dear Diary,</p>
+        <p>Today was the most exciting day of this year. Our school organised the Annual Sports Day. I was so happy that I could not sleep last night.</p>
+        <p>I woke up early and reached school at 7 am. All the students wore sports uniforms. The Chief Guest opened the programme and we marched in the ground. After that, the games began. I took part in the 100-metre race and the long jump. In the race, I was very nervous. But when the whistle blew, I ran as fast as I could. I came second. I was a little sad, but my friends said that I did well. In the long jump, I got the first position. I was very happy and proud.</p>
+        <p>My friend Sunita won the volleyball match for our house. We cheered loudly for her. In the evening, the principal gave prizes to the winners. I also got a medal.</p>
+        <p>I felt tired but very happy. I learnt that we should play with a sporting spirit. I want to practise more and win the first prize in the next year.</p>
+        <p>Now I am going to sleep. Good night.</p>
+        <p class="sign">Yours,<br>Amrita</p>
+      </div>
+    </article>
+
+    <!-- Q8.16 -->
+    <article class="card" id="q8-16">
+      <div class="card-head"><span class="qnum">Q8.16</span><span class="qtype">Diary Entry</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a diary entry in about 200 words about a day when you helped an injured stranger and how you felt about it.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <p><b>Wednesday, 18 November 2026</b><br><b>9:00 pm</b></p>
+        <p>Dear Diary,</p>
+        <p>Today something happened that I will never forget. I am still feeling a bit shocked.</p>
+        <p>While I was returning from school with my friend, we saw a crowd near the bridge. An old man was lying on the road. A motorbike had hit him and ran away. He was bleeding from his leg and he was crying in pain. Many people were standing there and just looking. No one was helping him.</p>
+        <p>I felt very sad. I told my friend that we must help him. I went near him and spoke to him gently. I told him not to worry. I tied a clean cloth on his leg to stop the blood. My friend ran to call an ambulance. Then I asked a man to help us and we took him to the side of the road. After ten minutes, the ambulance came and took him to the hospital.</p>
+        <p>I felt happy that I could help someone. But I also felt angry at the people who ran away and who did not help. I think everyone should help the injured. Tomorrow I will go to the hospital and ask about him.</p>
+        <p>Good night, dear diary.</p>
+      </div>
+    </article>
+
+    <!-- Q8.17 -->
+    <article class="card" id="q8-17">
+      <div class="card-head"><span class="qnum">Q8.17</span><span class="qtype">Newspaper Article</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a newspaper article in about 200 words on <b>'Climate Change and Its Effects on Nepal'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Climate Change and Its Effects on Nepal</h4>
+        <p><i>By Our Correspondent</i></p>
+        <p>Climate change is one of the biggest problems of the world today. Nepal is a small country, but it is facing its serious effects.</p>
+        <p>The main cause of climate change is the increase in greenhouse gases. They come from burning fuel, cutting down forests and from factories. Because of this, the earth is becoming hot.</p>
+        <p>In Nepal, the effects can be seen everywhere. The snow on the Himalayas is melting fast. It creates the risk of glacial lake floods. Rainfall has become unpredictable. In some places there is too much rain, which causes floods and landslides. In other places there is drought, so farmers cannot grow crops. Diseases like dengue are also spreading in new places. The weather is getting hotter, and many animals and plants are in danger.</p>
+        <p>We can do many things to reduce the effects. We should plant more trees and not cut down forests. We should use public transport, solar energy and electric vehicles. We should also reduce waste and not burn plastic.</p>
+        <p>In conclusion, climate change is a problem for everyone. If we do not act now, our future generations will suffer. So, let us all work together to save our earth.</p>
+      </div>
+    </article>
+
+    <!-- Q8.18 -->
+    <article class="card" id="q8-18">
+      <div class="card-head"><span class="qnum">Q8.18</span><span class="qtype">Newspaper Article</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a newspaper article in about 200 words on <b>'Tourism: A Pillar of Nepal's Economy'</b>.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Tourism: A Pillar of Nepal's Economy</h4>
+        <p><i>By Our Correspondent</i></p>
+        <p>Nepal is a country of natural beauty and rich culture. Every year, many tourists come here to see the Himalayas, the temples and the wildlife. Tourism is one of the main sources of income of our country.</p>
+        <p>At present, tourism is growing again. Trekking in Annapurna and Everest, jungle safari in Chitwan and pilgrimage to Lumbini and Pashupatinath are very popular. Many hotels, restaurants and travel agencies are being opened in different places.</p>
+        <p>Tourism has many benefits. It gives jobs to thousands of people, like guides, porters and hotel workers. It brings foreign money to the country. It also helps to promote our culture and helps in the development of roads and airports in remote areas. People in villages can also earn money by selling their local products.</p>
+        <p>But there are some challenges too. Many places do not have good roads and facilities. The tourists create waste in the mountains. Sometimes there are accidents and flight problems. Also, the country is affected by natural disasters and diseases like COVID-19.</p>
+        <p>To improve it, the government should build better roads and airports. It should keep the places clean and safe. It should also advertise Nepal well in the world. If we do these things, tourism will help Nepal to develop.</p>
+      </div>
+    </article>
+
+    <!-- Q8.19 -->
+    <article class="card" id="q8-19">
+      <div class="card-head"><span class="qnum">Q8.19</span><span class="qtype">Film Review</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a review of a film you have recently watched in about 200 words. Include the genre, the story, its strengths, weaknesses and your recommendation.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Review of the Film "Kabaddi"</h4>
+        <p><b>Genre:</b> Comedy and drama<br><b>Language:</b> Nepali<br><b>Director:</b> Ram Babu Gurung</p>
+        <p>"Kabaddi" is a popular Nepali movie which I watched last week with my family. It is a very funny movie with a little bit of love story.</p>
+        <p>The story is about two friends, Mahesh and Dhiren, who live in Kathmandu. They fall in love with girls and face problems with their families. In the end, they solve their problems with the help of friends and prove their love. The story is simple and easy to follow.</p>
+        <p>The film has many good points. First, the acting of the actors is very natural. They made us laugh a lot. Second, the songs are beautiful and the music is nice. Third, the film shows the real life of Nepali people and their culture. It also gives a message about friendship and true love.</p>
+        <p>However, it has some weaknesses. Some scenes are too long. Also, a few jokes are repeated, which made me a bit bored.</p>
+        <p>Overall, I liked the movie. It is a good movie for the whole family. I recommend everyone to watch it at least once to have fun and relax.</p>
+      </div>
+    </article>
+
+    <!-- Q8.20 -->
+    <article class="card" id="q8-20">
+      <div class="card-head"><span class="qnum">Q8.20</span><span class="qtype">Book Review</span></div>
+      <div class="qbox">
+        <span class="label">Question</span>
+        <p>Write a review of a book you have recently read in about 200 words. Include the author, genre, the story, its strengths, weaknesses and your recommendation.</p>
+      </div>
+      <div class="abox">
+        <span class="label">Answer</span>
+        <h4>Review of the Book "The Alchemist"</h4>
+        <p><b>Author:</b> Paulo Coelho<br><b>Genre:</b> Adventure fiction</p>
+        <p>"The Alchemist" is a famous book that I read recently. My English teacher told us about it, and I borrowed it from the school library.</p>
+        <p>The story is about a shepherd boy named Santiago from Spain. He has a dream that there is a treasure near the pyramids of Egypt. So, he leaves his sheep and goes on a long journey. On the way, he meets a king, a shopkeeper, an Englishman and a girl named Fatima. He also meets an alchemist who teaches him many things. After many problems, he reaches the pyramids. In the end, he finds out that the real treasure was near his home.</p>
+        <p>The main character, Santiago, is brave and hopeful. He learns from every problem. The writer uses simple words, so the book is easy to read. The best part of the book is its message. It teaches us to follow our dreams and not to give up. It also tells us that the journey is as important as the goal.</p>
+        <p>But in some parts, the story moves slowly and some ideas are hard to understand for young students.</p>
+        <p>Overall, it is a wonderful book. I recommend it to all students and also to adults who want to get inspired.</p>
+      </div>
+    </article>
+
+  </div><!-- /cards Q8 -->
+
+  <div class="footer">
+    <p><b>Prepared by Narayan Sir</b> · Grade 9 English · Writing Practice Bank (Q5–Q8)</p>
+    <p>Model answers are written in simple student-level English for classroom practice.</p>
+  </div>
+
+</main>
+
+<!-- ================= SCROLL BUTTONS ================= -->
+<div class="scroll-stack">
+  <button class="scroll-btn top" id="scrollTop" aria-label="Scroll up">▲</button>
+  <button class="scroll-btn" id="scrollBottom" aria-label="Scroll down">▼</button>
+</div>
+
+<script>
+(function () {
+  const sidebar  = document.getElementById('sidebar');
+  const overlay  = document.getElementById('overlay');
+  const menuBtn  = document.getElementById('menuBtn');
+  const navClose = document.getElementById('navClose');
+
+  /* ---------- Open / close sidebar ---------- */
+  function openNav() {
+    sidebar.classList.add('open');
+    overlay.classList.add('show');
+    menuBtn.setAttribute('aria-expanded', 'true');
+  }
+  function closeNav() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('show');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+  function toggleNav() {
+    sidebar.classList.contains('open') ? closeNav() : openNav();
+  }
+
+  menuBtn.addEventListener('click', toggleNav);
+  navClose.addEventListener('click', closeNav);
+  overlay.addEventListener('click', closeNav);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  /* ---------- Close menu after choosing a link ---------- */
+  document.querySelectorAll('.sidebar a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (window.innerWidth < 1200) closeNav();
+    });
+  });
+
+  /* ---------- Scroll up / down buttons ---------- */
+  const scrollTopBtn    = document.getElementById('scrollTop');
+  const scrollBottomBtn = document.getElementById('scrollBottom');
+
+  scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  scrollBottomBtn.addEventListener('click', function () {
+    window.scrollBy({ top: window.innerHeight * 0.85, behavior: 'smooth' });
+  });
+
+  /* ---------- Active link highlighting ---------- */
+  const links  = Array.from(document.querySelectorAll('.sidebar a[href^="#"]'));
+  const cards  = Array.from(document.querySelectorAll('.card, .section-title'));
+
+  function setActive(id) {
+    links.forEach(function (l) {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+    });
+  }
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+
+  cards.forEach(function (c) { if (c.id) observer.observe(c); });
+})();
+</script>
+
+</body>
+</html>
